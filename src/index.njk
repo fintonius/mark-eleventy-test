@@ -1,0 +1,16 @@
+---
+title: example
+layout: 'base.njk'
+---
+    
+<main class="home-page-content">
+    {%- for project in collections.project -%} 
+    <card>
+        <a href="{{ project.url }}">
+            <img src="{{ project.data.image }}"/>
+        </a>
+    </card>
+{%- endfor %}
+   
+</main>
+</div>
