@@ -1,7 +1,7 @@
 ---
 title: Test Project Page
 tags:
-  - post
+  - project
 layout: project-page.njk
 collaborator: Fintan
 dates: current
