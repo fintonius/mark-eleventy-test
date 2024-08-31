@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/home-page-style.css" />
     <link rel="stylesheet" href="/project-style.css" />
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>
 <body>
     {% include 'header.njk' %}
     {{ content | safe }}
     {% include 'footer.njk' %}
     <script src="script.js"></script>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
