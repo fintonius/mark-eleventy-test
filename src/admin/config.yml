@@ -18,9 +18,9 @@ collections:
       - { label: "Context", name: "context", widget: "string"}
       - { label: "Poster Image", name: "image", widget: "image"}
       - { label: "Image caption", name: "imageAlt", widget: "string"}
-      - { label: "Text input", name: "body", widget: "markdown"}
+
       - label: "Content Blocks"
-        name: "content_blocks"
+        name: "body"
         widget: "list"
         types:
           - label: "Text Block"
