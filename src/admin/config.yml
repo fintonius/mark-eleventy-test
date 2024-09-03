@@ -27,17 +27,19 @@ collections:
         name: "content_blocks"
         widget: "list"
         types:
+          - label: "Section Heading"
+            name: "section_heading"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "markdown" }
           - label: "Text Block"
             name: "text_block"
             widget: "object"
             fields:
-              - label: "Text"
-                name: "text"
-                widget: "markdown"
+              - { label: "Text", name: "text", widget: "markdown" }
           - label: "Image Block"
             name: "image_block"
             widget: "object"
             fields:
-              - label: "Image"
-                name: "image"
-                widget: "image"
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Caption", name: "caption", widget: "string" }
