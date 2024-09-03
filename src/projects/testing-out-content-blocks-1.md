@@ -43,4 +43,4 @@ content_blocks:
       desktop publishing software like Aldus PageMaker including versions of
       Lorem Ipsum."
 ---
-This is test text
+This is second attempt with same published project
