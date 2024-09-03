@@ -22,69 +22,23 @@ layout: base.njk
             </div>
     </section>
     <main class="project-content-main">
-        <section id="overview" class="projectContentSection">
-            <h1 class="projectContentHeading">PROJECT OVERVIEW</h1>
-                <div class="projectContentText">
-                    {{ content | safe }}
-                </div>
-                <div class="projectContentImages">
-                    <img src="/assets/media/woodstock-poster.jpg"/>
-                    <img src="/assets/media/1.jpg"/>
-                </div>
 
-        </section>
-        <section id="engagement" class="projectContentSection">
-            <h2 class="projectContentHeading">PROJECT ENGAGEMENT</h2>
-            <div class="projectContentText">
-                <p>Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of
-                    Lorem Ipsum.</p>
-            </div>
-                <div class="projectContentImages">
-                    <img src="/assets/media/10.jpg"/>
-                    <img src="/assets/media/11.jpg"/>
-                </div>
+        {% for block in content_blocks %}
+            {% if block.type == "section_heading" %}
+                <h2 class="projectContentHeading">
+                    {{ block.text | safe }}
+                </h2>
+            {% elif block.type == "text_block" %}
                 <div class="projectContentText">
-                    <p>Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap
-                        into electronic typesetting, remaining essentially
-                        unchanged. It was popularised in the 1960s with the
-                        release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing
-                        software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
+                    {{ block.text | safe }}
                 </div>
-        </section>
-        <section id="feedback" class="projectContentSection">
-            <h2 class="projectContentHeading">PROJECT FEEDBACK</h2>
-            <div class="projectContentText">
-                <p>Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of
-                    Lorem Ipsum.</p>
-            </div>
-        </section>
+            {% elif block.type == "image_block" %}
+                <div class="projectContentImages">
+                    <img src="{{ block.image }}/>
+                </div>
+            {% endif %}
+        {% endfor %}
+       
     </main>
 </div>
 </div> 
