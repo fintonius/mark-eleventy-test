@@ -1,8 +1,13 @@
 backend:
   name: git-gateway
   branch: main
+
+# image storage
 media_folder: "public/assets/media"
 public_folder: "/assets/media"
+
+publish_mode: editorial_workflow # Enable editorial workflow 
+
 collections:
   - name: "project"
     label: "Project"
@@ -10,30 +15,31 @@ collections:
     create: true
     slug: "{{slug}}"
     fields: 
-      - { label: "Title", name: "title", widget: "string"}
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"]}
-
-      - { label: "Collaborator", name: "collaborator", widget: "string"}
-      - { label: "Dates", name: "dates", widget: "string"}
-      - { label: "Context", name: "context", widget: "string"}
-      - { label: "Poster Image", name: "image", widget: "image"}
-      - { label: "Image caption", name: "imageAlt", widget: "string"}
-      - { label: "Text input", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: ["project"], required: false }
+      - { label: "Collaborator", name: "collaborator", widget: "string", required: false }
+      - { label: "Dates", name: "dates", widget: "string", required: false }
+      - { label: "Context", name: "context", widget: "string", required: false }
+      - { label: "Poster Image", name: "image", widget: "image", required: false }
+      - { label: "Image caption", name: "imageAlt", widget: "string", required: false }
+      - { label: "Text input", name: "body", widget: "markdown", required: false }
       - label: "Content Blocks"
         name: "content_blocks"
         widget: "list"
         types:
+          - label: "Section Heading"
+            name: "section_heading"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "markdown" }
           - label: "Text Block"
             name: "text_block"
             widget: "object"
             fields:
-              - label: "Text"
-                name: "text"
-                widget: "markdown"
+              - { label: "Text", name: "text", widget: "markdown" }
           - label: "Image Block"
             name: "image_block"
             widget: "object"
             fields:
-              - label: "Image"
-                name: "image"
-                widget: "image"
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Caption", name: "caption", widget: "string" }
