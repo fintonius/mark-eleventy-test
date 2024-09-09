@@ -1,6 +1,6 @@
-import markdownIt from "markdown-it";
+const markdownIt = require ("markdown-it");
 
-export default function(eleventyConfig) {
+module.exports = function(eleventyConfig) {
     
     eleventyConfig.addPassthroughCopy('src/style.css');
     eleventyConfig.addPassthroughCopy('src/home-page-style.css');
@@ -21,7 +21,7 @@ export default function(eleventyConfig) {
 
     // configures Eleventy to use md as the specific instance of markdown-it
     eleventyConfig.setLibrary("md", md);
-    
+
     return {
         dir: {
             input: "src",

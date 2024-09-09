@@ -1,7 +1,6 @@
 {
  "name": "Mark 11ty test",
  "main": "index.js",
- "type": "module",
  "scripts": {
   "start": "eleventy --serve",
   "build": "eleventy"
