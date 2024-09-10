@@ -26,11 +26,11 @@ layout: base.njk
         {% for block in content_blocks %}
             {% if block.type == "section_heading" %}
                 <h2 class="projectContentHeading">
-                    {{ block.heading | safe }}
+                    {{ block.heading | markdown | safe }}
                 </h2>
             {% elif block.type == "text_block" %}
                 <div class="projectContentText">
-                    {{ block.text | safe }}
+                    {{ block.text | markdown | safe }}
                 </div>
             {% elif block.type == "image_block" %}
                 <div class="projectContentImages">
@@ -41,4 +41,4 @@ layout: base.njk
        
     </main>
 </div>
-</div> 
+</div>
