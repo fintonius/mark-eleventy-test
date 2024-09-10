@@ -12,5 +12,8 @@ content_blocks:
     heading: But the context blocks are not showing up
   - type: text_block
     text: And the CSS styles are clearly not being added too. So it's not working :(
+  - type: image_block
+    image: /assets/media/fine.png
+    caption: it's not fine
 ---
 What if I type here?
