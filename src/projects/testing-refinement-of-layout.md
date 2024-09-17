@@ -5,7 +5,7 @@ tags:
 collaborator: Fintan
 dates: 08/09
 context: Configuring markdown input being converted to HTML when published
-image: /assets/media/hellraiser-uk-quad-poster.jpeg
+image: /assets/media/1.jpg
 content_blocks:
   - type: section_heading
     heading: "# Project Overview Title"
