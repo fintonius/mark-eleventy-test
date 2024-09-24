@@ -10,6 +10,8 @@ template: page
 content_blocks:
   - type: section_heading
     heading: Some Images
+  - type: text_block
+    text: some text
 images:
   - image: /assets/media/10.jpg
     caption: Test 1
