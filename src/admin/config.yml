@@ -22,7 +22,6 @@ collections:
       - { label: "Context", name: "context", widget: "string", required: false }
       - { label: "Poster Image", name: "image", widget: "image", required: false }
       - { label: "Image caption", name: "imageAlt", widget: "string", required: false }
-      - { label: "Text input", name: "body", widget: "markdown", required: false }
       - { label: "Template", name: "template", widget: "hidden", default: "page"}
       - label: "Content Blocks"
         name: "content_blocks"
