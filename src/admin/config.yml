@@ -44,8 +44,8 @@ collections:
             fields:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Caption", name: "caption", widget: "string" }
-      - label: "Images"
-        name: "images"
+      - label: "Gallery Block"
+        name: "gallery_block"
         widget: "list"
         fields:
           - { label: "Image", name: "image", widget: "image" }

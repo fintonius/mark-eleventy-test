@@ -35,9 +35,22 @@ layout: base.njk
             {% elif block.type == "image_block" %}
                 <div class="projectContentImages">
                     <img src="{{ block.image }}" />
-                </div>
+                </div>            
             {% endif %}
         {% endfor %}
+        
+        {% if gallery_block %}
+            <div class="projectContentImages">
+                {% for block in gallery_block %}
+                    <figure>
+                        <img src="{{ block.image }}" alt="{{ block.caption }}">
+                        {% if block.caption %}
+                            <figcaption>{{ block.caption }}</figcaption>
+                        {% endif %}
+                    </figure>
+                {% endfor %}
+            </div>
+        {% endif %}
        
     </main>
 </div>
