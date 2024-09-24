@@ -43,7 +43,7 @@ layout: base.njk
             <div> Test text </div>
             <div class="projectContentImages">
                 {% for image in images %}
-                    <img src="{{ block.image }}" />                        
+                    <img src="{{ image.image }}" />                        
                 {% endfor %}
             </div>
         {% endif %}       
