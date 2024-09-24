@@ -18,4 +18,11 @@ content_blocks:
   - type: images
     image: /assets/media/8.jpg
     caption: second test
+images:
+  - image: /assets/media/10.jpg
+    caption: test
+  - image: /assets/media/12.jpg
+    caption: test
+  - image: /assets/media/7.jpg
+    caption: test
 ---
