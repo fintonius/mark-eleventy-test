@@ -12,6 +12,13 @@ content_blocks:
     heading: Some Images
   - type: text_block
     text: some text
+gallery_block:
+  - type: gallery_image
+    image: /assets/media/10.jpg
+    caption: test1
+  - type: gallery_image
+    image: /assets/media/2.jpg
+    caption: test2
 images:
   - image: /assets/media/10.jpg
     caption: Test 1
