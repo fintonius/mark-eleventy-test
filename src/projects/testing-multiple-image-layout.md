@@ -11,7 +11,14 @@ content_blocks:
   - type: section_heading
     heading: Some Images
   - type: text_block
-    text: some text
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue urna,
+      blandit rhoncus condimentum molestie, commodo quis dui. Sed congue urna
+      nec ante pulvinar pretium. Nulla efficitur tincidunt viverra. Praesent
+      vitae elit vestibulum, facilisis lorem nec, tristique urna. Duis at lacus
+      consectetur, mollis augue vitae, egestas ex. Ut efficitur vehicula neque
+      vitae egestas. Vestibulum nisl neque, lobortis sit amet risus id, pharetra
+      gravida magna. Vestibulum eget diam at lectus egestas posuere ac sit amet
+      est. Cras luctus neque id gravida interdum.
 gallery_block:
   - type: gallery_image
     image: /assets/media/10.jpg
