@@ -39,7 +39,7 @@ layout: base.njk
             {% elif gallery_block %}
             <div> Test text </div>
             <div class="projectContentImages">
-                {% for image in images %}
+                {% for image in gallery_image %}
                     <img src="{{ image.image }}" />                        
                 {% endfor %}
             </div>           

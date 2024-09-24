@@ -46,6 +46,10 @@ collections:
           - label: "Gallery Block"
             name: "gallery_block"
             widget: "list"
-            fields:
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Image Caption", name: "caption", widget: "string" }
+            types:
+              - label: "Gallery Image"
+                name: "gallery_image"
+                widget: "object"
+                fields:
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Image Caption", name: "caption", widget: "string" }
