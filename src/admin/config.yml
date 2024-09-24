@@ -51,5 +51,5 @@ collections:
                 name: "gallery_image"
                 widget: "object"
                 fields:
-                - { label: "Image", name: "image", widget: "image" }
-                - { label: "Image Caption", name: "caption", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Image Caption", name: "caption", widget: "string" }
