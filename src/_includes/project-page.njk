@@ -38,15 +38,20 @@ layout: base.njk
                 </div> 
             {% elif block.type == "gallery_block" %}
             <div> Entire block: {{ block | dump | safe }} </div>
-            <div> Fields data from gallery_image: {{ block.gallery_image.fields | dump | safe }}</div>
-            <div> Testing out fallback message: {{ block.barnacles ? block.barnacles | dump : 'Theres no barnacles here boy' }}</div>
+            <div> Fields data from gallery_image: {{ block.gallery_image[0] | dump | safe }}</div>
+            <div> Testing out fallback message: 
+                {% if block.barnacles %} 
+                    {{ block.barnacles | dump }}
+                {% else %} 'Theres no barnacles here boy' 
+                {% endif %}
+                </div>
             <div class="projectContentImages">
                 {% for image in block.gallery_image %}
                     <img src="{{ image.image }}" />                        
                 {% endfor %}
             </div>
             <script> 
-                console.log{{ block | dump | safe }}
+                console.log({{ block | dump | safe }});
             </script>      
             {% endif %}
         {% endfor %}
