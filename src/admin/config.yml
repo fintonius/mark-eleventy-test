@@ -26,7 +26,7 @@ collections:
       - label: "Content Blocks"
         name: "content_blocks"
         widget: "list"
-        types:
+        fields:
           - label: "Section Heading"
             name: "section_heading"
             widget: "object"
@@ -46,7 +46,7 @@ collections:
           - label: "Gallery Block"
             name: "gallery_block"
             widget: "list"
-            types:
+            fields:
               - label: "Gallery Image"
                 name: "gallery_image"
                 widget: "object"
