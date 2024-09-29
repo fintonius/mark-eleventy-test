@@ -34,6 +34,20 @@ content_blocks:
         caption: oih
   - type: text_block
     text: additional text
+  - type: gallery_block
+    gallery_image:
+      - image: /assets/media/2.jpg
+        caption: test2
+      - image: /assets/media/fine.png
+        caption: test3
+  - type: text_block
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue urna,
+      blandit rhoncus condimentum molestie, commodo quis dui. Sed congue urna
+      nec ante pulvinar pretium. Nulla efficitur tincidunt viverra. Praesent
+      vitae elit vestibulum, facilisis lorem nec, tristique urna. Duis at lacus
+      consectetur, mollis augue vitae, egestas ex. Ut efficitur vehicula neque
+      vitae egestas. Vestibulum nisl neque, lobortis sit amet risus id, pharetra
+      gravida mag
 images:
   - image: /assets/media/10.jpg
     caption: Test 1
