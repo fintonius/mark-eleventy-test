@@ -36,10 +36,10 @@ layout: base.njk
                 <div class="projectContentImages">
                     <img src="{{ block.image }}" />
                 </div> 
-            {% elif gallery_block %}
+            {% elif block.type == "gallery_block" %}
             <div> Test text {{ gallery_block.fields }}</div>
             <div class="projectContentImages">
-                {% for image in gallery_image %}
+                {% for image in block.gallery_image %}
                     <img src="{{ image.image }}" />                        
                 {% endfor %}
             </div>           
