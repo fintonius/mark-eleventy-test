@@ -48,6 +48,9 @@ content_blocks:
       consectetur, mollis augue vitae, egestas ex. Ut efficitur vehicula neque
       vitae egestas. Vestibulum nisl neque, lobortis sit amet risus id, pharetra
       gravida mag
+  - type: image_block
+    image: /assets/media/8.jpg
+    caption: single image
 images:
   - image: /assets/media/10.jpg
     caption: Test 1
