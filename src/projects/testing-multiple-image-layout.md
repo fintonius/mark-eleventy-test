@@ -32,6 +32,8 @@ content_blocks:
         caption: kjuh
       - image: /assets/media/5.jpg
         caption: oih
+  - type: text_block
+    text: additional text
 images:
   - image: /assets/media/10.jpg
     caption: Test 1
