@@ -26,7 +26,7 @@ collections:
       - label: "Content Blocks"
         name: "content_blocks"
         widget: "list"
-        fields:
+        types:
           - label: "Section Heading"
             name: "section_heading"
             widget: "object"
