@@ -1,4 +1,11 @@
 ---
+gallery_block:
+  - type: gallery_image
+    image: /assets/media/10.jpg
+    caption: test1
+  - type: gallery_image
+    image: /assets/media/2.jpg
+    caption: test2
 title: Testing multiple image layout
 tags:
   - project
@@ -19,13 +26,12 @@ content_blocks:
       vitae egestas. Vestibulum nisl neque, lobortis sit amet risus id, pharetra
       gravida magna. Vestibulum eget diam at lectus egestas posuere ac sit amet
       est. Cras luctus neque id gravida interdum.
-gallery_block:
-  - type: gallery_image
-    image: /assets/media/10.jpg
-    caption: test1
-  - type: gallery_image
-    image: /assets/media/2.jpg
-    caption: test2
+  - type: gallery_block
+    gallery_image:
+      - image: /assets/media/12.jpg
+        caption: kjuh
+      - image: /assets/media/5.jpg
+        caption: oih
 images:
   - image: /assets/media/10.jpg
     caption: Test 1
