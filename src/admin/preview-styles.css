@@ -42,7 +42,7 @@ header {
     /* border: solid 1px yellow; */
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'HeaderFont', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
     /* font-size: clamp(2rem, 4vw, 3rem); */
 }
