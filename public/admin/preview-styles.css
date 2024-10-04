@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('./assets/fonts/IntroHeadB-Trial-Base.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BodyFont';
+    src: url('./assets/fonts/Knockout-HTF51-Middleweight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BodyFontItalic';
+    src: url('./assets/fonts/Knockout-HTF51-Middleweight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    padding-top: .5rem;
+    font-family: 'BodyFont', sans-serif;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
+    background: black;
+    color: white;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px green; */
+}
+header {
+    font-family: 'HeaderFont', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    /* border: solid 1px yellow; */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'HeaderFont', sans-serif;
+    font-weight: normal;
+    /* font-size: clamp(2rem, 4vw, 3rem); */
+}
+p {
+    font-family: 'BodyFont', sans-serif;
+    padding: .5rem;
+}
+.frame-content {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9rem;
+  }
+  .frame-content img {
+    max-width: 100%;
+  }
+.projectBody {
+    /* border: solid 1px red; */
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 3rem;
+}
+nav {
+    /* border: solid 1px blue; */
+    padding: 1.5rem 0;
+}
+#heroContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: .5rem;
+    padding: 1.5rem 0;
+}
+#poster {
+    width: 100%;
+    max-width: 600px;
+    /* min-width: 40%; */
+}
+ul {
+    list-style: none;
+    font-family: 'HeaderFont', sans-serif;
+}
+#pageLinks {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.links {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#projectLinks {    
+    visibility: hidden;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    opacity: 0;
+    transform: translateX(0px);
+    transition: opacity .4s ease, transform .5s ease, visibility .4s ease;
+}
+#projects:hover #projectLinks {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(20px);
+}
+.projectContext{
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns: one for titles, one for information */
+    grid-template-rows: auto auto auto auto 1fr;
+    gap: 0; /* No gap between grid items */
+    border-top: 1px solid white; /* Top border for the whole grid */
+    border-bottom: 1px solid white; /* Bottom border for the whole grid */
+}
+.project-details {
+    border-top: 1px solid white; /* Top border for each cell */
+    border-right: 1px solid white; /* Right border for each cell */
+    border-bottom: 1px solid white; /* Bottom border for each cell */
+    display: flex;
+    align-items: top;
+    padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+}
+.project-details-title {
+    font-family: 'HeaderFont', sans-serif;
+    font-size: clamp(1.1rem, 1.1vw, 1.2rem);
+}
+.project-details-content {
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
+    padding-right: .5rem;
+}
+.projectContext :last-child, 
+.projectContext :nth-last-child(2) {
+    border-bottom: none ;
+}
+.projectContextInfo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.projectContextInfo p:first-child {
+    margin-bottom: 5px;
+}
+#projectTitle {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-family: 'HeaderFont', sans-serif;
+}
+main {
+    /* border: solid 1px blue;; */
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+img {
+    /* border: 1px solid white; */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; /* Changes the cursor to the default arrow */
+    outline: none; /* Removes the outline on focus */
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* footer */
+  footer {
+    padding: 3rem;
+    text-align: center;
+    font-size: clamp(.7rem, 1vw, 1rem);
+  }
+
+  
