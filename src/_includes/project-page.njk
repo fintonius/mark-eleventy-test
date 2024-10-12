@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 
-<div class="projectContent">
+<main class="projectContent">
     <section id="hero">
             <div id="heroContent">
                 <img id="poster" src="{{ image }}"
@@ -21,7 +21,7 @@ layout: base.njk
                 </div>
             </div>
     </section>
-    <main class="project-content-main">
+    <div class="project-content-main">
 
         {% for block in content_blocks %}
             {% if block.type == "section_heading" %}
@@ -44,6 +44,6 @@ layout: base.njk
                 </div>     
             {% endif %}
         {% endfor %}
-    </main>
-</div>
+    </div>
+</main>
 </div>
