@@ -48,12 +48,12 @@ p {
     font-family: 'BodyFont', sans-serif;
     padding: .5rem;
 }
-.projectBody {
-    /* border: solid 1px red; */
+/* .projectBody {
+    border: solid 1px red;
     display: grid;
     grid-template-columns: 1fr 5fr;
     gap: 3rem;
-}
+} */
 nav {
     /* border: solid 1px blue; */
     padding: 1.5rem 0;
