@@ -33,13 +33,11 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* border: solid 1px green; */
 }
 header {
     font-family: 'HeaderFont', sans-serif;
     font-size: 1.5rem;
     padding-bottom: 3rem;
-    /* border: solid 1px yellow; */
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'HeaderFont', sans-serif;
@@ -161,8 +159,8 @@ img {
 a {
     text-decoration: none;
     color: inherit;
-    cursor: pointer; /* Changes the cursor to the default arrow */
-    outline: none; /* Removes the outline on focus */
+    cursor: pointer;
+    outline: none;
   }
   
   a:hover, a:focus {
