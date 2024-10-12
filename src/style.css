@@ -49,7 +49,7 @@ p {
     padding: .5rem;
 }
 .projectBody {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     display: grid;
     grid-template-columns: 1fr 5fr;
     gap: 3rem;

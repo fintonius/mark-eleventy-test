@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 
-<main class="home-page-content">
+<main class="projectContent">
     <section id="hero">
             <div id="heroContent">
                 <img id="poster" src="{{ image }}"
@@ -21,7 +21,7 @@ layout: base.njk
                 </div>
             </div>
     </section>
-        <div class="projectBody"> 
+        <div class="project-content-main"> 
         {% for block in content_blocks %}
             {% if block.type == "section_heading" %}
                 <h2 class="projectContentHeading">
