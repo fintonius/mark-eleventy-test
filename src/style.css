@@ -95,7 +95,7 @@ ul {
     transform: translateX(0px);
     transition: opacity .4s ease, transform .5s ease, visibility .4s ease;
 }
-#projects:hover #projectLinks {
+nav #projects:hover #projectLinks {
     visibility: visible;
     opacity: 1;
     transform: translateX(20px);
