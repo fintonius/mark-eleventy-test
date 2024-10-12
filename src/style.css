@@ -58,7 +58,7 @@ nav {
     /* border: solid 1px blue; */
     padding: 1.5rem 0;
 }
-#heroContent {
+/* #heroContent {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: .5rem;
@@ -67,8 +67,8 @@ nav {
 #poster {
     width: 100%;
     max-width: 600px;
-    /* min-width: 40%; */
-}
+    min-width: 40%;
+} */
 ul {
     list-style: none;
     font-family: 'HeaderFont', sans-serif;
