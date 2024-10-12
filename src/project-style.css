@@ -42,18 +42,15 @@
 
 /* THE MAIN CONTENT OF THE PROJECT PAGE */
 .projectContent {
-    /* border: solid 1px yellow; */
     max-width: 900px;
     padding-left: 5rem;
 }
 .projectContentSection{
-    /* border: solid 1px blue; */
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
 }
 .projectContentHeading {
-    /* border: solid 1px green; */
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -61,8 +58,6 @@
     width: 90%;
     margin: 0 auto;
     margin-bottom: .5rem;
-    /* border: 1px solid lightblue; */
-    
 }
 .projectContentImages {
     display: grid;
@@ -73,9 +68,7 @@
     margin: 0 auto;
 }
 img {
-    /* border: 1px solid white; */
     max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
-
