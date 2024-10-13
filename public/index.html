@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/home-page-style.css" />
+    <link rel="stylesheet" href="/project-style.css" />
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</head>
+<body>
+    <header><a href="/index.html">MARK DURKAN</a></header>
+    <div class="projectBody">
+        <nav>   
+            <ul id="pageLinks">
+                <li id="projects" class="projects links">PROJECTS
+                    <ul id="projectLinks"><li> <a href="/projects/testing-out-content-blocks/">Testing out Content Blocks</a></li><li> <a href="/projects/confirming-typo-fix-worked/">Confirming typo fix worked</a></li><li> <a href="/projects/testing-fix-to-images/">Testing fix to images</a></li><li> <a href="/projects/testing-refinement-of-layout/">Testing refinement of layout</a></li><li> <a href="/projects/testing-multiple-image-layout/">Testing multiple image layout</a></li><li> <a href="/projects/trying-to-fix-navbar/">Trying to fix navbar</a></li><li> <a href="/projects/showing-mom-and-aileen-the-website/">Showing mom and Aileen the website</a></li></ul>
+                </li>
+                <li class="info links"><a href="./project-page.html">INFO</a></li>
+                <li class="contact links"><a href="./project-page.html">CONTACT</a></li>
+            </ul>
+        </nav>
+                
+        
+<main class="home-page-content"><card>
+        <a href="/projects/testing-out-content-blocks/">
+            <img src="/assets/media/9.jpg"/>
+        </a>
+    </card><card>
+        <a href="/projects/confirming-typo-fix-worked/">
+            <img src="/assets/media/woodstock-poster.jpg"/>
+        </a>
+    </card><card>
+        <a href="/projects/testing-fix-to-images/">
+            <img src="/assets/media/4.jpg"/>
+        </a>
+    </card><card>
+        <a href="/projects/testing-refinement-of-layout/">
+            <img src="/assets/media/1.jpg"/>
+        </a>
+    </card><card>
+        <a href="/projects/testing-multiple-image-layout/">
+            <img src="/assets/media/3.jpg"/>
+        </a>
+    </card><card>
+        <a href="/projects/trying-to-fix-navbar/">
+            <img src=""/>
+        </a>
+    </card><card>
+        <a href="/projects/showing-mom-and-aileen-the-website/">
+            <img src="/assets/media/fine.png"/>
+        </a>
+    </card>
+   
+</main>
+</div>
+
+    <footer>Copyright Mark Durkan 2024</footer>
+    <script src="/script.js"></script>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>

@@ -5,7 +5,7 @@
                 <li id="projects" class="projects links">PROJECTS
                     <ul id="projectLinks">
                         {%- for project in collections.project -%}
-                            <li>{{ project.data.title }} </li>
+                            <li> <a href="{{ project.url }}">{{ project.data.title }}</a></li>
                         {%- endfor -%}
                     </ul>
                 </li>
