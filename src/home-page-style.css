@@ -8,6 +8,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content:space-between ;
     padding: 0;
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
 }
 

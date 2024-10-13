@@ -37,7 +37,7 @@ body {
 header {
     font-family: 'HeaderFont', sans-serif;
     font-size: 1.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'HeaderFont', sans-serif;
@@ -54,7 +54,7 @@ p {
     gap: 3rem;
 }
 nav {
-    padding: 1.5rem 0;
+    /* padding: 1.5rem 0; */
 }
 ul {
     list-style: none;
