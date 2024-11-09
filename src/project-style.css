@@ -88,3 +88,46 @@ img {
     height: auto;
     margin: 0 auto;
 }
+
+/* Mobile styles */
+
+@media (max-width: 780px) {
+    /* Header section */
+    header {
+        padding: 0px;
+        padding-top: 1rem;
+        display: inline-block;
+    }
+    header > a {
+        line-height: .5;
+        padding: 0px;
+        display: inline-block;        
+    }
+    .projectBody {
+        padding-top: 0px;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    #pageLinks {
+        flex-direction: row;
+        justify-self: end;
+    }
+    /* Hero section */
+    #heroContent {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+
+    }
+    #poster {
+        max-width: 800px;
+    }
+    .projectContext{
+        grid-template-columns: auto auto auto auto 1fr;
+        grid-template-rows: 1fr 2fr; 
+    }
+    /* Project content */
+    /* .projectContentImages {
+        grid-template-columns: 1fr;
+    } */
+}
