@@ -8,16 +8,26 @@ layout: base.njk
                 <img id="poster" src="{{ image }}"
                     alt="{{ imageAlt }}" />
                 <div class="projectContext">                                
-                    <div class="project-details project-details-title" >PROJECT</div>
-                    <div class="project-details project-details-content" >{{ title }}</div> 
-                    <div class="project-details project-details-title" >DATES</div>
-                    <div class="project-details project-details-content" >{{ dates }}</div>                                 
-                    <div class="project-details project-details-title" >COLLABORATOR</div>
-                    <div class="project-details project-details-content" >{{ collaborator }}</div>                               
-                    <div class="project-details project-details-title" >CONTEXT</div>
-                    <div class="project-details project-details-content" >{{ context }}</div>                                
-                    <div class="project-details project-details-title" >FUNDERS</div>
-                    <div class="project-details project-details-content" > </div>   
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >PROJECT</div>
+                        <div class="project-details project-details-content" >{{ title }}</div>
+                    </card>
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >DATES</div>
+                        <div class="project-details project-details-content" >{{ dates }}</div>
+                    </card>                               
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >COLLABORATOR</div>
+                        <div class="project-details project-details-content" >{{ collaborator }}</div>
+                    </card>                             
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >CONTEXT</div>
+                        <div class="project-details project-details-content" >{{ context }}</div>
+                    </card>                             
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >FUNDERS</div>
+                        <div class="project-details project-details-content" > </div>
+                    </card>
                 </div>
             </div>
     </section>

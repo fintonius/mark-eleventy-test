@@ -5,8 +5,8 @@
 #heroContent {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: .2rem;
     /* padding: 1.5rem 0; */
 }
 #poster {
@@ -17,16 +17,21 @@
 }
 .projectContext{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr ;
     grid-template-rows: auto auto auto auto 1fr;
     gap: 0; 
     border-top: 1px solid white; /* Top border for the whole grid */
     border-bottom: 1px solid white; /* Bottom border for the whole grid */
+    border-right: 1px solid white;
+    margin-top: 0px; /*This is to align the white outline with Poster image*/
+    margin-bottom: 0px; /*This is to align the white outline with Poster image*/
+}
+.project-details-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid white; 
 }
 .project-details {
-    border-top: 1px solid white; /* Top border for each cell */
-    border-right: 1px solid white; /* Right border for each cell */
-    border-bottom: 1px solid white; /* Bottom border for each cell */
     display: flex;
     align-items: top;
     padding: 0.5rem 0.5rem 0.8rem 0.5rem;
@@ -34,13 +39,13 @@
 .project-details-title {
     font-family: 'HeaderFont', sans-serif;
     font-size: clamp(1.1rem, 1.1vw, 1.2rem);
+    border-right: 1px solid white; 
 }
 .project-details-content {
     font-size: clamp(1rem, 1.1vw, 1.25rem);
     padding-right: .5rem;
 }
-.projectContext :last-child, 
-.projectContext :nth-last-child(2) {
+.projectContext :last-child {
     border-bottom: none ;
 }
 .projectContextInfo {
@@ -117,7 +122,6 @@ img {
         display: grid;
         grid-template-columns: 1fr;
         gap: .5rem;
-
     }
     #poster {
         max-width: 800px;
@@ -127,7 +131,7 @@ img {
         grid-template-rows: 1fr 2fr; 
     }
     /* Project content */
-    /* .projectContentImages {
+    .projectContentImages {
         grid-template-columns: 1fr;
-    } */
+    }
 }
