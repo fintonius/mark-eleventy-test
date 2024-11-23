@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const projects = document.getElementById('projects');
+    const projectsClick = document.getElementById('projectsClick');
     const projectLinks = document.getElementById('projectLinks');
     const otherLinks = document.querySelectorAll('#pageLinks > .links:not(#projects)');
 
@@ -15,4 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
             link.style.transform = 'translateY(0)';
         });
     });
-});
+
+    projectsClick.addEventListener('click', function() {
+        // alert('Text clicked!');
+        projectLinks.style.transform = 'translateX(0)';
+    })
+}); 

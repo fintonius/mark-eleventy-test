@@ -11,3 +11,10 @@ body {
     /* padding-top: 7rem; */
 }
 
+@media (max-width: 780px) {
+    .home-page-content{
+        display: grid;
+        gap: 1.2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
