@@ -1,11 +1,12 @@
 <header><a href="/index.html">MARK DURKAN</a></header>
     <div class="projectBody">
         <nav>   
+            <div id="overlay" ></div>
             <div id="pageLinks">
                 <div id="projects" class="projects links"><span id="projectsClick">PROJECTS<span>
                     <div id="projectLinks">
                         {%- for project in collections.project -%}
-                            <div> <a href="{{ project.url }}">{{ project.data.title }}</a></div>
+                            <div class="projectLink"> <a href="{{ project.url }}">{{ project.data.title }}</a></div>
                         {%- endfor -%}
                     </div>
                 </div>

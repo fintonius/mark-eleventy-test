@@ -73,19 +73,21 @@ ul {
     transition: transform 0.3s ease;
 }
 #projectLinks {    
-    /* visibility: visible; */
-    /* list-style-type: none; */
-    /* position: absolute; */
-    /* top: 100%;
+    /* display: none; */
+    visibility: hidden;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
     z-index: 1;
-    opacity: 1; */
-    /* transform: translateX(0px);
-    transition: opacity .4s ease, transform .5s ease, visibility .4s ease; */
+    opacity: 0;
+    transform: translateX(0px);
+    transition: opacity .5s ease, transform .7s ease, visibility .4s ease;
 }
-nav #projects:hover #projectLinks {
-    /* visibility: visible; */
+#projectsClick:hover #projectLinks {
+    /* display: block; */
+    visibility: visible;
     opacity: 1;
-    /* transform: translateX(20px); */
+    transform: translateX(20px);
 }
 main {
     padding-top: 2rem;
@@ -131,14 +133,33 @@ a {
         padding-left: 1rem;
         padding-right: 1rem; /* Adjust padding as needed */
     }
+    
     nav{
         width: 100%;
         /* max-width: 100%; */
     }
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.65);
+        opacity: 0;
+        transition: opacity .6s ease;
+        z-index: 1;
+        visibility: hidden;
+    }
+    #overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
      #pageLinks {
         display: flex; 
         flex-direction: row; 
-        justify-content: flex-end; 
+        justify-content: flex-start; 
+        padding-top: 1rem;
         font-size: 1rem; 
         position: static;
         gap: .5rem;
@@ -154,31 +175,24 @@ a {
         padding-top: 10px;
         display: grid;
         grid-template-columns: 1fr;
+        gap: .2rem;
         width: 200px;
         overflow: hidden;
         position: absolute;
         top: 100%;
-        z-index: 1;
+        z-index: 2;
         opacity: 0;
-        transform: translateX(180px);
-        transition: opacity .9s ease, transform .9s ease;
+        transform: translateX(-220px);
+        transition: opacity 2s ease, transform .6s ease;
     }
-    /* nav #projectLinks:active {
+    nav #projectLinks:active {
         opacity: 1;
         transform: translateX(0);
-    } */
+    }
     /* Disable animations on other links */
     .info,
     .contact {
         transform: none !important;
         transition: none !important; 
     }
-
-    /* ul {
-        padding: 0 1rem; 
-    }
-
-    li {
-        margin: 5px 0; /
-    }  */
 }
