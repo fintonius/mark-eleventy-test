@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     projectsClick.addEventListener('click', function() {
         // alert('Text clicked!');
-        projectLinks.style.transform = 'translateX(0)';
-        overlay.classList.add("active");
+        // projectLinks.style.transform = 'translateX(0)';
+        // overlay.classList.add("active");
     })
     overlay.addEventListener('click', function() {
         // alert('overlay clicked');
-        projectLinks.style.transform = 'translateX(-220px)';
-        overlay.classList.remove("active");
+        // projectLinks.style.transform = 'translateX(-220px)';
+        // overlay.classList.remove("active");
     })
 }); 
