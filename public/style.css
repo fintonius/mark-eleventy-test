@@ -127,8 +127,8 @@ a {
   /* mobile style */
   @media (max-width: 780px) {
     body {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 90%;
         margin: 0 auto;
         padding-left: 1rem;
         padding-right: 1rem; /* Adjust padding as needed */
@@ -171,6 +171,12 @@ a {
         cursor: pointer;
         transition: none;
     }
+    /* #projectsClick:hover #projectLinks {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0px);
+    } */
     #projectLinks {   
         padding-top: 10px;
         display: grid;
@@ -185,10 +191,11 @@ a {
         transform: translateX(-220px);
         transition: opacity 2s ease, transform .6s ease;
     }
-    nav #projectLinks:active {
+    
+    /* nav #projectLinks:active {
         opacity: 1;
         transform: translateX(0);
-    }
+    } */
     /* Disable animations on other links */
     .info,
     .contact {

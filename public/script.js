@@ -4,28 +4,49 @@ document.addEventListener('DOMContentLoaded', function () {
     const projectsClick = document.getElementById('projectsClick');
     const projectLinks = document.getElementById('projectLinks');
     const otherLinks = document.querySelectorAll('#pageLinks > .links:not(#projects)');
+    let viewportWidth = document.documentElement.clientWidth;
 
-    projects.addEventListener('mouseenter', function () {
-        const submenuHeight = projectLinks.scrollHeight; // Use scrollHeight for accurate measurement
-        otherLinks.forEach(link => {
-            link.style.transform = `translateY(${submenuHeight}px)`;
-        });
+    window.addEventListener('resize', () => {
+        console.log(viewportWidth)
+        viewportWidth = document.documentElement.clientWidth;
+    })
+
+    projectsClick.addEventListener('mouseenter', function () {
+        if (viewportWidth > 780) {
+                console.log('this is mouseEnter: ', viewportWidth)
+                const submenuHeight = projectLinks.scrollHeight; // Use scrollHeight for accurate measurement
+                otherLinks.forEach(link => {
+                    link.style.transform = `translateY(${submenuHeight}px)`;
+                });
+        } else if (viewportWidth <= 780) {
+            projectLinks.style.transform = 'translateX(0)';
+            projectLinks.style.opacity = '1';
+            projectLinks.style.visibility = 'visible';
+            overlay.classList.add("active");
+
+        }
     });
 
-    projects.addEventListener('mouseleave', function () {
-        otherLinks.forEach(link => {
-            link.style.transform = 'translateY(0)';
-        });
+    projectsClick.addEventListener('mouseleave', function () {
+       if (viewportWidth > 780) {
+            otherLinks.forEach(link => {
+                link.style.transform = 'translateY(0)';
+            });
+        }
     });
 
     projectsClick.addEventListener('click', function() {
-        // alert('Text clicked!');
-        // projectLinks.style.transform = 'translateX(0)';
-        // overlay.classList.add("active");
-    })
+        console.log(viewportWidth)
+        if (viewportWidth < 780) {            
+            projectLinks.style.transform = 'translateX(0)';
+        }
+        overlay.classList.add("active");
+    });
+
     overlay.addEventListener('click', function() {
-        // alert('overlay clicked');
-        // projectLinks.style.transform = 'translateX(-220px)';
-        // overlay.classList.remove("active");
-    })
+        if (viewportWidth < 780) {
+            projectLinks.style.transform = 'translateX(-220px)';
+        }
+        overlay.classList.remove("active");
+    });
 }); 
