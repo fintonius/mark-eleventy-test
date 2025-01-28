@@ -72,6 +72,9 @@ ul {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+/* #projects {
+    width: fit-content;
+} */
 #projectLinks {    
     /* display: none; */
     visibility: hidden;
@@ -171,12 +174,12 @@ a {
         cursor: pointer;
         transition: none;
     }
-    /* #projectsClick:hover #projectLinks {
+    #projectsClick:hover #projectLinks {
         display: block;
         visibility: visible;
         opacity: 1;
-        transform: translateX(0px);
-    } */
+        transform: translateX(-220px);
+    }
     #projectLinks {   
         padding-top: 10px;
         display: grid;
@@ -192,10 +195,10 @@ a {
         transition: opacity 2s ease, transform .6s ease;
     }
     
-    /* nav #projectLinks:active {
+    nav #projectLinks:active {
         opacity: 1;
         transform: translateX(0);
-    } */
+    }
     /* Disable animations on other links */
     .info,
     .contact {
