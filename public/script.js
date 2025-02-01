@@ -24,6 +24,8 @@ function addClick() {
 
 function handleClick() {
     console.log('the click has worked')
+    projectLinks.style.transform = 'translateX(0)';
+    overlay.classList.add("active");
 }
 
 function handleEnter() {
@@ -171,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     overlay.addEventListener('click', function() {
         if (viewportWidth < 780) {
-            projectLinks.style.transform = 'translateX(-220px)';
+            projectLinks.style.transform = 'translateX(-250px)';
         }
         overlay.classList.remove("active");
     });

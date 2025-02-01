@@ -81,13 +81,12 @@ ul {
     list-style-type: none;
     position: absolute;
     top: 100%;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     transform: translateX(0px);
     transition: opacity .5s ease, transform .7s ease, visibility .4s ease;
 }
-#projectsClick:hover #projectLinks {
-    /* display: block; */
+.hoverable:hover #projectLinks {
     visibility: visible;
     opacity: 1;
     transform: translateX(20px);
@@ -127,7 +126,7 @@ a {
     font-size: clamp(.7rem, 1vw, 1rem);
   }
 
-  /* mobile style */
+  /* MOBILE STYLE */
   @media (max-width: 780px) {
     body {
         width: 90%;
@@ -174,12 +173,13 @@ a {
         cursor: pointer;
         transition: none;
     }
-    #projectsClick:hover #projectLinks {
+    /* .clickable {
         display: block;
         visibility: visible;
         opacity: 1;
+        border: solid red 2px;
         transform: translateX(-220px);
-    }
+    } */
     #projectLinks {   
         padding-top: 10px;
         display: grid;
@@ -190,15 +190,16 @@ a {
         position: absolute;
         top: 100%;
         z-index: 2;
-        opacity: 0;
-        transform: translateX(-220px);
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-250px);
         transition: opacity 2s ease, transform .6s ease;
     }
     
-    nav #projectLinks:active {
+    /* nav #projectLinks:active {
         opacity: 1;
         transform: translateX(0);
-    }
+    } */
     /* Disable animations on other links */
     .info,
     .contact {
