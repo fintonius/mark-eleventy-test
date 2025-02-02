@@ -61,7 +61,7 @@ ul {
     font-family: 'HeaderFont', sans-serif;
 }
 #pageLinks {
-    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    font-size: clamp(1.1rem, 1.1vw, 1.2rem);
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -72,11 +72,8 @@ ul {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-/* #projects {
-    width: fit-content;
-} */
 #projectLinks {    
-    /* display: none; */
+    font-size: clamp(1rem, 1vw, 1.1rem);
     visibility: hidden;
     list-style-type: none;
     position: absolute;

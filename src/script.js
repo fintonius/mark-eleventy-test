@@ -1,18 +1,9 @@
 const overlay = document.getElementById('overlay');
-// const projectsHover = document.getElementById('projects');
 const projects = document.getElementById('projects');
 const projectsClick = document.getElementById('projectsClick');
 const projectLinks = document.getElementById('projectLinks');
 const otherLinks = document.querySelectorAll('#pageLinks > .links:not(#projects)');
 let viewportWidth;
-
-    // POTENTIAL SOLUTION FOR PROJECTS HOVER/CLICK ISSUE:
-    // if width > 780px add the onHover event listener & remove the click
-    // else add the onClick listener & remove the onHover
-    // these should be separate functions that are called when parameters are met
-    // also need an on resize listener that triggers the functions
-    // THE FUNCTIONS SHOULD JUST ADD OR REMOVE A CLASS THAT IS LINKED TO THE RELEVANT ACTION
-    // how does the CSS fit in to this?
 
 function addClick() {
     const clickable = document.querySelector('.clickable');
@@ -23,13 +14,11 @@ function addClick() {
 };
 
 function handleClick() {
-    console.log('the click has worked')
     projectLinks.style.transform = 'translateX(0)';
     overlay.classList.add("active");
 }
 
 function handleEnter() {
-    console.log('hover works')
     const submenuHeight = projectLinks.scrollHeight; // Use scrollHeight for accurate measurement
 
     otherLinks.forEach(link => {
@@ -38,7 +27,6 @@ function handleEnter() {
 };
 
 function handleLeave() {
-    console.log('hover still works');
     otherLinks.forEach(link => {
         link.style.transform = 'translateY(0)';
     });
@@ -54,7 +42,6 @@ function addHover() {
 
 window.addEventListener('resize', () => {
     viewportWidth = document.documentElement.clientWidth;
-    console.log('viewport width is: ', viewportWidth);
     if (viewportWidth <= 780) {
         projects.classList.add('clickable');
         projects.classList.remove('hoverable');
@@ -67,19 +54,27 @@ window.addEventListener('resize', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-
     viewportWidth = document.documentElement.clientWidth;
-     if (viewportWidth <= 780) {
+    if (viewportWidth <= 780) {
         projects.classList.add('clickable');
         projects.classList.remove('hoverable');
         addClick()
-     } else {
+    } else {
         projects.classList.add('hoverable');
         projects.classList.remove('clickable');
         addHover()
-     }
+    }
 
-    // console.log('this is viewport w: ', viewportWidth)
+    overlay.addEventListener('click', function() {
+        if (viewportWidth < 780) {
+            projectLinks.style.transform = 'translateX(-250px)';
+        }
+        overlay.classList.remove("active");
+    });
+});
+
+
+ // console.log('this is viewport w: ', viewportWidth)
 
     // projectsHover.addEventListener("click", function(event) {
     //     if (event.target.id === "projectsClick") {
@@ -170,11 +165,3 @@ document.addEventListener('DOMContentLoaded', function () {
 //         }
 //         overlay.classList.add("active");
 //     });
-
-    overlay.addEventListener('click', function() {
-        if (viewportWidth < 780) {
-            projectLinks.style.transform = 'translateX(-250px)';
-        }
-        overlay.classList.remove("active");
-    });
-});
