@@ -45,4 +45,10 @@ content_blocks:
       their participation in ALIBI. Reliving the event and re-embodying
       their character, the participants process their experience and
       discuss the impact the evnt had on their ife.
+  - type: gallery_block
+    gallery_image:
+      - image: /assets/media/dsc_3775.jpg
+        caption: "ALIBI participant (Photographer: Probably Damo ;)"
+      - image: /assets/media/dsc_3802.jpg
+        caption: "ALIBI intro by Mark Durkan (Photographer: Probably Damo ;)"
 ---
