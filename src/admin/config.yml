@@ -53,3 +53,7 @@ collections:
                 fields:
                   - { label: "Image", name: "image", widget: "image" }
                   - { label: "Image Caption", name: "caption", widget: "string" }
+          - label: "Project PDF"
+            name: "project_pdf"
+            widget: "file"
+            required: false
