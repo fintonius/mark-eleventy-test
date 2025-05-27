@@ -86,4 +86,6 @@ content_blocks:
       the guts of 3 hours. In a cynical, individual- driven world, ALIBI
 
       suggested other ways of being, and connecting
+  - type: project_pdf
+    document: /assets/media/durkanmark-support-material-alibi-testimonies.pdf
 ---
