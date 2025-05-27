@@ -55,5 +55,6 @@ collections:
                   - { label: "Image Caption", name: "caption", widget: "string" }
           - label: "Project PDF"
             name: "project_pdf"
-            widget: "file"
-            required: false
+            widget: "object"
+            fields: 
+              - { label: "Document", name: "document", widget: "field", required: false }

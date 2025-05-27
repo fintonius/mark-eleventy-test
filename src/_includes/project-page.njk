@@ -46,7 +46,7 @@ layout: base.njk
                     <img src="{{ block.image }}" />
                 </div> 
             {% elif block.type == "project_pdf" %}
-                <a href="{{ project.project_pdf }}" download>
+                <a href="{{ block.document }}" download>
                     Download Project PDF
                 </a>
             {% elif block.type == "gallery_block" %}
