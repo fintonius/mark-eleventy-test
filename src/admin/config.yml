@@ -57,4 +57,4 @@ collections:
             name: "project_pdf"
             widget: "object"
             fields: 
-              - { label: "Document", name: "document", widget: "field", required: false }
+              - { label: "Document", name: "document", widget: "file", required: false }
