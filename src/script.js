@@ -5,6 +5,7 @@ const projectLinks = document.getElementById('projectLinks');
 const otherLinks = document.querySelectorAll('#pageLinks > .links:not(#projects)');
 let viewportWidth;
 
+// Configuring the links drop-down menu opening/closing animation
 function addClick() {
     const clickable = document.querySelector('.clickable');
     
@@ -40,6 +41,7 @@ function addHover() {
     hoverable.addEventListener('mouseleave', handleLeave);
 };
 
+// configuring the links drop-down menu for use on mobile or desktop
 window.addEventListener('resize', () => {
     viewportWidth = document.documentElement.clientWidth;
     if (viewportWidth <= 780) {

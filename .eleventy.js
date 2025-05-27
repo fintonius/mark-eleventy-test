@@ -1,4 +1,5 @@
 const markdownIt = require ("markdown-it");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function(eleventyConfig) {
     
@@ -8,6 +9,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/assets');
     eleventyConfig.addPassthroughCopy('src/admin');
     eleventyConfig.addPassthroughCopy('src/script.js');
+    eleventyConfig.addPlugin(UpgradeHelper);
     
     // create a markdown filter to convert MD to HTML
     const md = markdownIt({

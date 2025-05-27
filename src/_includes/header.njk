@@ -6,7 +6,11 @@
                 <div id="projects" class="projects links"><span id="projectsClick">PROJECTS<span>
                     <div id="projectLinks">
                         {%- for project in collections.project -%}
-                            <div class="projectLink"> <a href="{{ project.url }}">{{ project.data.title }}</a></div>
+                            <div class="projectLink"> 
+                                <a href="{{ project.url }}">
+                                    {{ project.data.title }}
+                                </a>
+                            </div>
                         {%- endfor -%}
                     </div>
                 </div>
