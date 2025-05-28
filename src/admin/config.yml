@@ -43,6 +43,7 @@ collections:
             fields:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Caption", name: "caption", widget: "string" }
+              - { label: "Image Alt Text", name: "alt", widget: "string" }
           - label: "Gallery Block"
             name: "gallery_block"
             widget: "object"
@@ -58,3 +59,4 @@ collections:
             widget: "object"
             fields: 
               - { label: "Document", name: "document", widget: "file", required: false }
+              - { label: "Document name", name: "title", widget: "string" }

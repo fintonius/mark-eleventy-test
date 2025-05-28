@@ -44,10 +44,14 @@ layout: base.njk
             {% elif block.type == "image_block" %}
                 <div class="projectContentImages">
                     <img src="{{ block.image }}" />
+                    <p class="image-title" alt="{{ block.alt}}"> 
+                        {{ block.caption | safe}}
+                    </p>
                 </div> 
             {% elif block.type == "project_pdf" %}
-                <a href="{{ block.document }}" download>
-                    Download Project PDF
+                <a class=download-document href="{{ block.document }}" download>
+                <img class="document-icon" src="../assets/icons/pdf-documentation-svgrepo-com.svg" />
+                  {{ block.title | safe }}
                 </a>
             {% elif block.type == "gallery_block" %}
                 <div class="projectContentImages">
