@@ -11,6 +11,7 @@ content_blocks:
   - type: image_block
     image: /assets/media/alibi.jpg
     caption: ALIBI logo
+    alt: ALIBI logo
   - type: text_block
     text: |-
       ALIBI is simultaneously a fictional party and a process for speculatively
@@ -88,4 +89,5 @@ content_blocks:
       suggested other ways of being, and connecting
   - type: project_pdf
     document: /assets/media/durkanmark-support-material-alibi-testimonies.pdf
+    title: ALIBI Testimonies
 ---
