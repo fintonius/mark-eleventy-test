@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing fix to images</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/home-page-style.css" />
+    <link rel="stylesheet" href="/project-style.css" />
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</head>
+<body>
+    <header><a href="/index.html">MARK DURKAN</a></header>
+    <div class="projectBody">
+        <nav>   
+            <div id="overlay" ></div>
+            <div id="pageLinks">
+                <div id="projects" class="projects links">
+                    <span id="projectsClick">PROJECTS<span>
+                    <div id="projectLinks"><div class="projectLink"> 
+                                <a href="/projects/testing-out-content-blocks/">
+                                    Testing out Content Blocks
+                                </a>
+                            </div><div class="projectLink"> 
+                                <a href="/projects/testing-refinement-of-layout/">
+                                    Testing refinement of layout
+                                </a>
+                            </div><div class="projectLink"> 
+                                <a href="/projects/testing-to-see-if-new-links-setting-works/">
+                                    Testing new project settings
+                                </a>
+                            </div><div class="projectLink"> 
+                                <a href="/projects/alibi/">
+                                    ALIBI
+                                </a>
+                            </div><div class="projectLink"> 
+                                <a href="/projects/confirming-typo-fix-worked/">
+                                    Confirming typo fix worked
+                                </a>
+                            </div><div class="projectLink"> 
+                                <a href="/projects/testing-fix-to-images/">
+                                    Testing fix to images
+                                </a>
+                            </div><div class="projectLink"> 
+                                <a href="/projects/testing-multiple-image-layout/">
+                                    Testing multiple image layout
+                                </a>
+                            </div></div>
+                </div>
+                <div class="info links">
+                    <a href="./info-page/index.html">INFO</a>
+                </div>
+                <div class="contact links">
+                    <a href="./contact-page/index.html">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+                
+    
+<div>
+    <section id="hero">
+            <div id="heroContent">
+                <img id="poster" src="/assets/media/4.jpg"
+                    alt="install" />
+                <div class="projectContext">                                
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >PROJECT</div>
+                        <div class="project-details project-details-content" >Testing fix to images</div>
+                    </card>
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >DATES</div>
+                        <div class="project-details project-details-content" >08/09</div>
+                    </card>                               
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >COLLABORATOR</div>
+                        <div class="project-details project-details-content" >Fintan</div>
+                    </card>                             
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >CONTEXT</div>
+                        <div class="project-details project-details-content" ></div>
+                    </card>                             
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >FUNDERS</div>
+                        <div class="project-details project-details-content" > </div>
+                    </card>
+                </div>
+            </div>
+    </section>
+        <main class="project-content-main"> 
+        
+            
+                <div class="projectContentImages">
+                    <img src="/assets/media/10.jpg" />
+                    <p class="image-title" alt=""> 
+                        image test
+                    </p>
+                </div> 
+            
+        
+            
+                <div class="projectContentText">
+                    <p>Test to see if images show up when added</p>
+
+                </div>
+            
+        
+            
+                <div class="projectContentImages">
+                    <img src="/assets/media/hellraiser-uk-quad-poster.jpeg" />
+                    <p class="image-title" alt=""> 
+                        Check to see if image can be added from upload
+                    </p>
+                </div> 
+            
+        
+    </main>
+</div>
+
+</div>
+    <footer>Copyright Mark Durkan 2024</footer>
+    <script src="/script.js"></script>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
