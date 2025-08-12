@@ -1,4 +1,3 @@
 {
-  "layout": "project-page.njk",
-  "tags": ["project"]
+  "layout": "project-page.njk"
 }
