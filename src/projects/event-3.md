@@ -1,8 +1,8 @@
 ---
 title: Event 3
 tags:
-  - "['project'"
-  - "'event']"
+  - project
+  - event
 image: /assets/media/fine.png
 template: page
 content_blocks:
