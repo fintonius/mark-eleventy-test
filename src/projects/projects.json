@@ -1,4 +1,4 @@
 {
   "layout": "project-page.njk",
-  "tags": "project"
+  "tags": ["project"]
 }
