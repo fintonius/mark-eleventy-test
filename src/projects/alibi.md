@@ -2,6 +2,7 @@
 title: ALIBI
 tags:
   - project
+  - practice
 dates: Various
 image: /assets/media/alibi.png
 template: page

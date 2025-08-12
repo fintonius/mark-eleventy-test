@@ -2,6 +2,7 @@
 title: Testing fix to images
 tags:
   - project
+  - practice
 collaborator: Fintan
 dates: 08/09
 image: /assets/media/4.jpg

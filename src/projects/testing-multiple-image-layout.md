@@ -9,6 +9,7 @@ gallery_block:
 title: Testing multiple image layout
 tags:
   - project
+  - practice
 collaborator: Fintan
 dates: Today
 context: See if I can add multiple images into post
