@@ -2,6 +2,7 @@
 title: Testing refinement of layout
 tags:
   - project
+  - participate
 collaborator: Fintan
 dates: 08/09
 context: Configuring markdown input being converted to HTML when published

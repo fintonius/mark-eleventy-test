@@ -2,7 +2,7 @@
 title: Testing out Content Blocks
 tags:
   - project
-layout: project-page.njk
+  - participate
 collaborator: Fintan
 dates: today
 context: testing content block

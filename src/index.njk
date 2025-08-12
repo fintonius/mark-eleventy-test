@@ -3,14 +3,22 @@ title: example
 layout: base.njk
 ---
     
-<main class="home-page-content">
-    {%- for project in collections.participate -%} 
-        <card>
-            <a href="{{ project.url }}">
-                <img src="{{ project.data.image }}"/>
-            </a>
-        </card>
-    {%- endfor %}
+<main >
+    <div>
+        <h2> Participate </h2>
+        <div class="home-page-content">
+            {%- for project in collections.participate -%}
+                <card>
+                    <a href="{{ project.url }}">
+                        <img src="{{ project.data.image }}"/>
+                    </a>
+                </card>
+            {%- endfor %}
+        </div>
+    </div>
+<div>
+    <h2> Practice </h2>
+    <div class="home-page-content">
     {%- for project in collections.practice -%}
         <card>
             <a href="{{ project.url }}">
@@ -18,12 +26,19 @@ layout: base.njk
             </a>
         </card>
     {%- endfor -%}
-    {%- for project in collections.event -%}
-        <card>
-            <a href="{{ project.url }}">
-                <img src="{{ project.data.image }}"/>
-            </a>
-        </card>
-    {%- endfor -%}
+    </div>
+</div>
+    <div>
+        <h2> Projects </h2>
+        <div class="home-page-content">
+            {%- for project in collections.event -%}
+                <card>
+                    <a href="{{ project.url }}">
+                        <img src="{{ project.data.image }}"/>
+                    </a>
+                </card>
+            {%- endfor -%}
+        </div>
+    </div>
 </main>
 </div>

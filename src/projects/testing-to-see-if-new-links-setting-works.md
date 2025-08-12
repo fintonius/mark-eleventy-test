@@ -2,6 +2,7 @@
 title: Testing new project settings
 tags:
   - project
+  - participate
 collaborator: Me
 dates: 15/10
 context: Seeing if a new link will be added to Projects when this is published
