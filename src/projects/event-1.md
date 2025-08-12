@@ -1,10 +1,11 @@
 ---
 title: Event 1
 tags:
-  - project event
+  - project
+  - event
 collaborator: Fintan
 dates: August 12 2025
-image: /assets/media/dsc_3775.jpg
+image: /assets/media/10.jpg
 template: page
 content_blocks:
   - type: section_heading
