@@ -6,10 +6,11 @@ gallery_block:
   - type: gallery_image
     image: /assets/media/2.jpg
     caption: test2
-title: Testing multiple image layout
-collaborator: Fintan
-dates: Today
-context: See if I can add multiple images into post
+title: My Private Apocalypse
+collaborator: ""
+dates: ""
+context: ""
+imageAlt: Yanya
 content_blocks:
   - type: section_heading
     heading: Some Images
@@ -47,6 +48,7 @@ content_blocks:
   - type: image_block
     image: /assets/media/8.jpg
     caption: single image
+    alt: Install shot
 images:
   - image: /assets/media/10.jpg
     caption: Test 1
@@ -55,6 +57,6 @@ images:
 tags:
   - project
   - practice
-image: /assets/media/3.jpg
+image: /assets/media/yanya1.jpg
 template: page
 ---
