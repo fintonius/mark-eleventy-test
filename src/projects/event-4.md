@@ -2,7 +2,7 @@
 title: I'm astonished wall that you haven't collapsed into ruins
 tags:
   - project
-  - event
+  - practice
 image: /assets/media/wall-collapsed-2.jpg
 imageAlt: Installation view
 content_blocks:
