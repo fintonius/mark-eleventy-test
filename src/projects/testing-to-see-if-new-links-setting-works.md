@@ -1,13 +1,13 @@
 ---
-title: Testing new project settings
+title: Union Group
 tags:
   - project
-  - participate
-collaborator: Me
-dates: 15/10
-context: Seeing if a new link will be added to Projects when this is published
-image: /assets/media/woodstock-poster.jpg
-imageAlt: test
+  - event
+collaborator: ""
+dates: ""
+context: ""
+image: /assets/media/04-16-panke-gallery-clarken-web.jpg
+imageAlt: Panke Gallery
 content_blocks:
   - type: section_heading
     heading: Section 1
@@ -21,10 +21,14 @@ content_blocks:
       dengan penerbitan
   - type: gallery_block
     gallery_image:
-      - image: /assets/media/10.jpg
-        caption: test
-      - image: /assets/media/2.jpg
-        caption: test
+      - image: /assets/media/07-16-panke-gallery-clarken-web.jpg
+        caption: Panke Gallery
+      - image: /assets/media/45055753_397566844113285_2482223116898533376_n.jpg
+        caption: Panke Gallery
+      - image: /assets/media/img_5335.png
+        caption: Panke Gallery
+      - image: /assets/media/45130777_248307205837281_280012561821204480_n.jpg
+        caption: Panke Gallery
   - type: section_heading
     heading: Section 2
   - type: text_block
@@ -36,6 +40,7 @@ content_blocks:
       dengan tiada perubahan ketara. Ia telah dipopularkan pada tahun 1960an
       dengan penerbitan
   - type: image_block
-    image: /assets/media/fine.png
-    caption: test
+    image: /assets/media/social-clinic-image.jpg
+    caption: Social Clinic
+    alt: Social Clinic poster
 ---
