@@ -1,8 +1,8 @@
 ---
-title: Event 1
+title: CRV
 tags:
   - project
-  - event
+  - participate
 collaborator: Fintan
 dates: August 12 2025
 image: /assets/media/10.jpg
