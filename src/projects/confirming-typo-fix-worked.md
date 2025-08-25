@@ -1,13 +1,13 @@
 ---
 collaborator: Fintan
-dates: today
+dates: ""
 layout: project-page.njk
-title: Confirming typo fix worked
+title: Architype
 tags:
   - project
-  - practice
-context: testing content block for 2nd time
-image: /assets/media/woodstock-poster.jpg
+  - participate
+context: ""
+image: /assets/media/alibi.png
 imageAlt: Install 1
 ---
 seeing if the changes to projects.json works
