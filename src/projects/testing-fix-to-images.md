@@ -1,19 +1,21 @@
 ---
-title: Testing fix to images
+title: Untitled (Azgur)
 tags:
   - project
   - practice
-collaborator: Fintan
-dates: 08/09
-image: /assets/media/4.jpg
-imageAlt: install
+collaborator: ""
+dates: ""
+image: /assets/media/victoria-azgur.png
+imageAlt: Victoria - Azgur
 content_blocks:
   - type: image_block
-    image: /assets/media/10.jpg
-    caption: image test
+    image: /assets/media/alisa1.jpg
+    caption: Alisa
+    alt: Alisa
   - type: text_block
     text: Test to see if images show up when added
   - type: image_block
-    image: /assets/media/hellraiser-uk-quad-poster.jpeg
-    caption: Check to see if image can be added from upload
+    image: /assets/media/yanya1.jpg
+    caption: Yanya
+    alt: Yanya
 ---
