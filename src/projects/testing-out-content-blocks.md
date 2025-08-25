@@ -1,11 +1,11 @@
 ---
-title: Testing out Content Blocks
+title: Parking Meter Arts
 tags:
   - project
-  - participate
-collaborator: Fintan
-dates: today
-context: testing content block
+  - event
+collaborator: ""
+dates: ""
+context: ""
 image: /assets/media/9.jpg
 imageAlt: install shot caption
 content_blocks:
@@ -16,6 +16,8 @@ content_blocks:
       the image below was added with the content block
   - type: image_block
     image: /assets/media/11.jpg
+    caption: Install shot
+    alt: Install shot
   - type: text_block
     text: >-
       ## this is the second block of text
@@ -30,5 +32,7 @@ content_blocks:
       and finally another image added using the content block
   - type: image_block
     image: /assets/media/7.jpg
+    caption: Install shot
+    alt: Install shot
 ---
 So it turns out the text input is required. Could need to remove this
