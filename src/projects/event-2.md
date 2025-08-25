@@ -1,8 +1,9 @@
 ---
-title: Event 2
+title: One Union
 tags:
-  - project event
-context: To see if the tagging fix has worked
+  - project
+  - participate
+context: One Union event
 image: /assets/media/dsc_3802.jpg
 template: page
 content_blocks:
