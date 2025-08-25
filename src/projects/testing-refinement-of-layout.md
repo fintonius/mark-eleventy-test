@@ -1,11 +1,11 @@
 ---
-title: Testing refinement of layout
+title: Standard Features
 tags:
   - project
-  - participate
-collaborator: Fintan
-dates: 08/09
-context: Configuring markdown input being converted to HTML when published
+  - event
+collaborator: ""
+dates: ""
+context: ""
 image: /assets/media/1.jpg
 content_blocks:
   - type: section_heading
@@ -18,6 +18,7 @@ content_blocks:
   - type: image_block
     image: /assets/media/1.jpg
     caption: Testing image capton & vertical orientation
+    alt: Install shot
   - type: section_heading
     heading: "## This is a H2 Sub-Section Heading"
   - type: text_block
