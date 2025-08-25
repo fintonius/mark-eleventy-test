@@ -1,11 +1,17 @@
 ---
-title: event 4
+title: I'm astonished wall that you haven't collapsed into ruins
 tags:
   - project
   - event
-image: /assets/media/fine.png
-template: page
+image: /assets/media/wall-collapsed-2.jpg
+imageAlt: Installation view
 content_blocks:
   - type: section_heading
-    heading: Still frustrating
+    heading: I'm astonished wall that you haven't collapsed into ruins
+  - type: gallery_block
+    gallery_image:
+      - image: /assets/media/wall-collapsed-1.jpg
+        caption: Installation view
+      - image: /assets/media/wall-collapsed-2.jpg
+        caption: Installation view
 ---
