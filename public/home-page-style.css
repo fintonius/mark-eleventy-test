@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('./assets/fonts/IntroHeadB-Trial-Base.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     max-width: 1400px;
 }
@@ -15,8 +22,9 @@ main {
 }
 
 h2 {
-    font-family: 'BodyFont', sans-serif;
-      padding-bottom: 1rem;
+    font-family: 'HeaderFont', sans-serif;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
 }
 .home-page-content {
     display: grid;
