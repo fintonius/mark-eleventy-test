@@ -10,10 +10,13 @@
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
-<body>
+<body>       
     {% include 'header.njk' %}
-    {{ content | safe }}
-    {% include 'footer.njk' %}
+    <div class="projectBody">
+      {% include 'sidebar.njk' %}
+      {{ content | safe }}
+      {% include 'footer.njk' %}
+    </div>
     <script src="/script.js"></script>
     <script>
   if (window.netlifyIdentity) {
