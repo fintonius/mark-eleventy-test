@@ -1,21 +1,18 @@
 ---
 title: ALIBI
-tags:
-  - project
-  - participate
+context: This is a brief description of the Alibi project. It is written in the
+  'Context' section when creating a project and will be automatically added when
+  generating the link
 image: /assets/media/alibi.png
-imageAlt: ALIBI poster
 content_blocks:
   - type: image_block
     image: /assets/media/alibi.jpg
-    caption: Alibi logo
-    alt: Alibi logo
-  - type: section_heading
-    heading: ALIBI overview
+    caption: ALIBI logo
+    alt: ALIBI logo
   - type: gallery_block
     gallery_image:
-      - image: /assets/media/dsc_3775.jpg
-        caption: ALIBI participant
       - image: /assets/media/dsc_3802.jpg
-        caption: ALIBI participants
+        caption: Participants at ALIBI
+      - caption: Participant at ALIBI
+        image: /assets/media/dsc_3775.jpg
 ---
