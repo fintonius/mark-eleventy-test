@@ -8,13 +8,15 @@ layout: base.njk
         <h2> Participate </h2>
         <div class="home-page-content">
             {%- for project in collections.participate -%}
-                <card>
-                    <a href="{{ project.url }}">
-                        <img src="{{ project.data.image }}"/>
-                    </a>
-                </card>
-                <div id="page-link-description">
-                    {{ project.data.context | safe }}
+                <div class="project-link-image">
+                    <card>
+                        <a href="{{ project.url }}">
+                            <img src="{{ project.data.image }}"/>
+                        </a>
+                    </card>
+                    <div id="page-link-description">
+                        {{ project.data.context | safe }}
+                    </div>
                 </div>
             {%- endfor %}
         </div>
@@ -23,11 +25,16 @@ layout: base.njk
     <h2> Practice </h2>
     <div class="home-page-content">
     {%- for project in collections.practice -%}
-        <card>
-            <a href="{{ project.url }}">
-                <img src="{{ project.data.image }}"/>
-            </a>
-        </card>
+        <div class="project-link-image">
+            <card>
+                <a href="{{ project.url }}">
+                    <img src="{{ project.data.image }}"/>
+                </a>
+            </card>
+            <div id="page-link-description">
+                {{ project.data.context | safe }}
+            </div>
+        </div>
     {%- endfor -%}
     </div>
 </div>
@@ -35,11 +42,16 @@ layout: base.njk
         <h2> Projects </h2>
         <div class="home-page-content">
             {%- for project in collections.event -%}
-                <card>
-                    <a href="{{ project.url }}">
-                        <img src="{{ project.data.image }}"/>
-                    </a>
-                </card>
+                <div class="project-link-image">
+                    <card>
+                        <a href="{{ project.url }}">
+                            <img src="{{ project.data.image }}"/>
+                        </a>
+                    </card>
+                    <div id="page-link-description">
+                        {{ project.data.context | safe }}
+                    </div>
+                </div>
             {%- endfor -%}
         </div>
     </div>

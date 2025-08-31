@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALIBI</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/home-page-style.css" />
+    <link rel="stylesheet" href="/project-style.css" />
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</head>
+<body>       
+    <header><a href="/index.html">MARK DURKAN</a></header>
+
+    <div class="projectBody">
+      <nav>   
+    <div id="overlay" ></div>
+    <div id="pageLinks">
+      <div class="info links">
+        <a href="./info-page/index.html">INFO</a>
+      </div>
+      <div class="contact links">
+        <a href="./contact-page/index.html">CONTACT</a>
+      </div>
+    </div>
+</nav>
+      
+<div>
+    <section id="hero">
+            <div id="heroContent">
+                <img id="poster" src="/assets/media/alibi.png"
+                    alt="" />
+                <div class="projectContext">                                
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >PROJECT</div>
+                        <div class="project-details project-details-content" >ALIBI</div>
+                    </card>
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >DATES</div>
+                        <div class="project-details project-details-content" ></div>
+                    </card>                               
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >COLLABORATOR</div>
+                        <div class="project-details project-details-content" ></div>
+                    </card>                             
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >CONTEXT</div>
+                        <div class="project-details project-details-content" >This is the decription text for the project that will appear beneath the project image on the home page</div>
+                    </card>                             
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >FUNDERS</div>
+                        <div class="project-details project-details-content" > </div>
+                    </card>
+                </div>
+            </div>
+    </section>
+        <main class="project-content-main"> 
+        
+            
+                <div class="projectContentImages">
+                    <img src="/assets/media/alibi.jpg" />
+                    <p class="image-title" alt="ALIBI logo"> 
+                        ALIBI logo
+                    </p>
+                </div> 
+            
+        
+            
+                <div class="projectContentImages">
+                    
+                        <img src="/assets/media/dsc_3775.jpg" />                        
+                    
+                        <img src="/assets/media/dsc_3802.jpg" />                        
+                    
+                </div>     
+            
+        
+    </main>
+</div>
+
+</div>
+      <footer>Copyright Mark Durkan 2024</footer>
+    </div>
+    <script src="/script.js"></script>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
