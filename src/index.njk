@@ -13,6 +13,9 @@ layout: base.njk
                         <img src="{{ project.data.image }}"/>
                     </a>
                 </card>
+                <div id="page-link-description">
+                    {{ project.data.context | safe }}
+                </div>
             {%- endfor %}
         </div>
     </div>
