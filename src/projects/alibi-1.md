@@ -2,6 +2,7 @@
 title: ALIBI
 tags:
   - project
+  - participate
 context: This is the decription text for the project that will appear beneath
   the project image on the home page
 image: /assets/media/alibi.png
