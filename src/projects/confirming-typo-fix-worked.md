@@ -6,7 +6,8 @@ layout: project-page.njk
 tags:
   - project
   - participate
-context: ""
+context: This is the decription text for the project that will appear beneath
+  the project image on the home page
 image: /assets/media/alibi.png
 imageAlt: Poster
 content_blocks:
