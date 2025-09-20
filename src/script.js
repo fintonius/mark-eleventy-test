@@ -3,167 +3,138 @@ const projects = document.getElementById('projects');
 const projectsClick = document.getElementById('projectsClick');
 const projectLinks = document.getElementById('projectLinks');
 const otherLinks = document.querySelectorAll('#pageLinks > .links:not(#projects)');
-let viewportWidth;
 
-// Configuring the links drop-down menu opening/closing animation
-function addClick() {
-    const clickable = document.querySelector('.clickable');
-    
-    clickable.removeEventListener('mouseenter', handleEnter);
-    clickable.removeEventListener('mouseleave', handleLeave);
-    clickable.addEventListener('click', handleClick);
-};
+// NAV-BAR ARROWS FOR HOME PAGE LINKS
+// - need to calculate x: current viewportWidth 
+// - need to calculate y: current total width of image links + sidebar
+// will just calculating width of <main> be enough?
+// need to remove resizing of images 
+// - need to calculate difference between x & y and when y > x
 
-function handleClick() {
-    projectLinks.style.transform = 'translateX(0)';
-    overlay.classList.add("active");
-}
+// - use window.addEventListener('resize', function() {}) to determine the widths of x & y and then trigger functions depending on if x > y or not
+// window.addEventListener('resize', (e) => {
+//     let viewportWidth = document.documentElement.clientWidth;
 
-function handleEnter() {
-    const submenuHeight = projectLinks.scrollHeight; // Use scrollHeight for accurate measurement
+//     let projectBody = document.getElementById('projectBody').scrollWidth
+//     console.log('this is projectbody', projectBody)
+//     console.log('this is viewport,', viewportWidth)
+// })
 
-    otherLinks.forEach(link => {
-        link.style.transform = `translateY(${submenuHeight}px)`;
-    });
-};
+// HOME PAGE NAVIGATION ARROWS
+document.querySelectorAll('.category').forEach(row => {
 
-function handleLeave() {
-    otherLinks.forEach(link => {
-        link.style.transform = 'translateY(0)';
-    });
-}
+    const container = row.querySelector('.home-page-content');
+    const leftArrow = row.querySelector('.left-arrow');
+    const rightArrow = row.querySelector('.right-arrow');
 
-function addHover() {
-    const hoverable = document.querySelector('.hoverable');
-
-    hoverable.removeEventListener('click', handleClick);
-    hoverable.addEventListener('mouseenter', handleEnter);
-    hoverable.addEventListener('mouseleave', handleLeave);
-};
-
-// configuring the links drop-down menu for use on mobile or desktop
-window.addEventListener('resize', () => {
-    viewportWidth = document.documentElement.clientWidth;
-    if (viewportWidth <= 780) {
-        projects.classList.add('clickable');
-        projects.classList.remove('hoverable');
-        addClick()
-    } else {
-        projects.classList.add('hoverable');
-        projects.classList.remove('clickable');
-        addHover()
-    };
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    viewportWidth = document.documentElement.clientWidth;
-    if (viewportWidth <= 780) {
-        projects.classList.add('clickable');
-        projects.classList.remove('hoverable');
-        addClick()
-    } else {
-        projects.classList.add('hoverable');
-        projects.classList.remove('clickable');
-        addHover()
+    function isOverFlowing(element) {    
+        return element.scrollWidth > element.clientWidth;
     }
 
-    overlay.addEventListener('click', function() {
-        if (viewportWidth < 780) {
-            projectLinks.style.transform = 'translateX(-250px)';
+    leftArrow.addEventListener('click', () => {
+        container.scrollBy({ left: -400, behavior: "smooth" });
+    })
+    rightArrow.addEventListener('click', () => {
+        container.scrollBy({ left: 400, behavior: "smooth" });
+    })
+
+    window.addEventListener('resize', () => {
+        if (isOverFlowing(container)) {
+            leftArrow.style.display = 'inline';
+            rightArrow.style.display = 'inline';
+        } else {
+            leftArrow.style.display = 'none';
+            rightArrow.style.display = 'none';
         }
-        overlay.classList.remove("active");
-    });
-});
+
+    })
+})
 
 
- // console.log('this is viewport w: ', viewportWidth)
 
-    // projectsHover.addEventListener("click", function(event) {
-    //     if (event.target.id === "projectsClick") {
-    //       console.log("Clicked #projectsClick");
-    //         projectsClick.addEventListener('click', function() {
-    //         if (viewportWidth <= 780) {            
-    //             projectLinks.style.transform = 'translateX(0)';
-    //         }
-    //         overlay.classList.add("active");
-    //     });
-    //     }
-    //   });
 
-    //   projectsHover.addEventListener('mouseenter', function () {
-    //         if (viewportWidth > 780) {
-    //                 console.log('this is mouseEnter: ', viewportWidth)
-    //                 const submenuHeight = projectLinks.scrollHeight; // Use scrollHeight for accurate measurement
-    //                 otherLinks.forEach(link => {
-    //                     link.style.transform = `translateY(${submenuHeight}px)`;
-    //                 });
-    //         } else if (viewportWidth <= 780) {
-    //             projectLinks.style.transform = 'translateX(0)';
-    //             projectLinks.style.opacity = '1';
-    //             projectLinks.style.visibility = 'visible';
-    //             overlay.classList.add("active");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SIDEBAR DROP-DOWN MENU - probably defunct now
+// Configuring the links drop-down menu opening/closing animation
+// function addClick() {
+//     const clickable = document.querySelector('.clickable');
     
-    //         }
-    //     });
-    // projectsHover.addEventListener('mouseleave', function () {
-    //    if (viewportWidth > 780) {
-    //         otherLinks.forEach(link => {
-    //             link.style.transform = 'translateY(0)';
-    //         });
-    //     }
-    // });
-    // the problem is this only fires when the window resizes
-    // window.addEventListener('resize', () => {
-    //     // console.log(viewportWidth)
-    //     viewportWidth = document.documentElement.clientWidth;
-    //     if (viewportWidth > 780) {
-    //         console.log('this is mouseEnter: ', viewportWidth)
-    //         projectsHover.addEventListener('mouseenter', function () {
-                
-    //             const submenuHeight = projectLinks.scrollHeight; // Use scrollHeight for accurate measurement
-    //             otherLinks.forEach(link => {
-    //                 link.style.transform = `translateY(${submenuHeight}px)`;
-    //             });
-    //         })
-        
-    //         projectsHover.addEventListener('mouseleave', function () {
-    //             if (viewportWidth > 780) {
-    //                  otherLinks.forEach(link => {
-    //                      link.style.transform = 'translateY(0)';
-    //                  });
-    //              }
-    //          });
-    //     }
-    // })
+//     clickable.removeEventListener('mouseenter', handleEnter);
+//     clickable.removeEventListener('mouseleave', handleLeave);
+//     clickable.addEventListener('click', handleClick);
+// };
 
-    // projectsHover.addEventListener('mouseenter', function () {
-    //     if (viewportWidth > 780) {
-    //             console.log('this is mouseEnter: ', viewportWidth)
-    //             const submenuHeight = projectLinks.scrollHeight; // Use scrollHeight for accurate measurement
-    //             otherLinks.forEach(link => {
-    //                 link.style.transform = `translateY(${submenuHeight}px)`;
-    //             });
-    //     } else if (viewportWidth <= 780) {
-    //         projectLinks.style.transform = 'translateX(0)';
-    //         projectLinks.style.opacity = '1';
-    //         projectLinks.style.visibility = 'visible';
-    //         overlay.classList.add("active");
+// function handleClick() {
+//     projectLinks.style.transform = 'translateX(0)';
+//     overlay.classList.add("active");
+// }
 
-    //     }
-    // });
+// function handleEnter() {
+//     const submenuHeight = projectLinks.scrollHeight; // Use scrollHeight for accurate measurement
 
-    // projectsHover.addEventListener('mouseleave', function () {
-    //    if (viewportWidth > 780) {
-    //         otherLinks.forEach(link => {
-    //             link.style.transform = 'translateY(0)';
-    //         });
-    //     }
-    // });
-
-//     projectsClick.addEventListener('click', function() {
-//         console.log(viewportWidth)
-//         if (viewportWidth <= 780) {            
-//             projectLinks.style.transform = 'translateX(0)';
-//         }
-//         overlay.classList.add("active");
+//     otherLinks.forEach(link => {
+//         link.style.transform = `translateY(${submenuHeight}px)`;
 //     });
+// };
+
+// function handleLeave() {
+//     otherLinks.forEach(link => {
+//         link.style.transform = 'translateY(0)';
+//     });
+// }
+
+// function addHover() {
+//     const hoverable = document.querySelector('.hoverable');
+
+//     hoverable.removeEventListener('click', handleClick);
+//     hoverable.addEventListener('mouseenter', handleEnter);
+//     hoverable.addEventListener('mouseleave', handleLeave);
+// };
+
+// // configuring the links drop-down menu for use on mobile or desktop
+// window.addEventListener('resize', () => {
+//     if (viewportWidth <= 780) {
+//         projects.classList.add('clickable');
+//         projects.classList.remove('hoverable');
+//         addClick()
+//     } else {
+//         projects.classList.add('hoverable');
+//         projects.classList.remove('clickable');
+//         addHover()
+//     };
+// });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     if (viewportWidth <= 780) {
+//         projects.classList.add('clickable');
+//         projects.classList.remove('hoverable');
+//         addClick()
+//     } else {
+//         projects.classList.add('hoverable');
+//         projects.classList.remove('clickable');
+//         addHover()
+//     }
+
+//     overlay.addEventListener('click', function() {
+//         if (viewportWidth < 780) {
+//             projectLinks.style.transform = 'translateX(-250px)';
+//         }
+//         overlay.classList.remove("active");
+//     });
+// });

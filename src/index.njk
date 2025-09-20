@@ -2,10 +2,22 @@
 title: example
 layout: base.njk
 ---
-    
-<main >
-    <div>
-        <h2> Participate </h2>
+{% block styles %}
+ <link rel="stylesheet" href="/home-page-style.css" />
+{% endblock %}
+<main id="main">
+    <section class="category">
+        <div class="title">
+            <h2> Participate </h2>
+            <div class="nav-arrows">
+                <button class="nav-arrow left-arrow" id="left-arrow">
+                    ◀
+                </button>
+                <button class="nav-arrow right-arrow" id="right-arrow">
+                    ▶
+                </button>
+            </div>
+        </div>
         <div class="home-page-content">
             {%- for project in collections.participate -%}
                 <div class="project-link-image">
@@ -20,26 +32,46 @@ layout: base.njk
                 </div>
             {%- endfor %}
         </div>
-    </div>
-<div>
-    <h2> Practice </h2>
-    <div class="home-page-content">
-    {%- for project in collections.practice -%}
-        <div class="project-link-image">
-            <card>
-                <a href="{{ project.url }}">
-                    <img src="{{ project.data.image }}"/>
-                </a>
-            </card>
-            <div id="page-link-description">
-                {{ project.data.context | safe }}
+    </section>
+    <section class="category">
+        <div class="title">
+            <h2> Practice </h2>
+            <div class="nav-arrows">
+                <button class="nav-arrow left-arrow" id="left-arrow">
+                    ◀
+                </button>
+                <button class="nav-arrow right-arrow" id="right-arrow">
+                    ▶
+                </button>
             </div>
         </div>
-    {%- endfor -%}
-    </div>
-</div>
-    <div>
-        <h2> Projects </h2>
+        <div class="home-page-content">
+        {%- for project in collections.practice -%}
+            <div class="project-link-image">
+                <card>
+                    <a href="{{ project.url }}">
+                        <img src="{{ project.data.image }}"/>
+                    </a>
+                </card>
+                <div id="page-link-description">
+                    {{ project.data.context | safe }}
+                </div>
+            </div>
+        {%- endfor -%}
+        </div>
+    </section>
+    <section class="category">
+        <div class="title">
+            <h2> Projects </h2>
+            <div class="nav-arrows">
+                <button class="nav-arrow left-arrow" id="left-arrow">
+                    ◀
+                </button>
+                <button class="nav-arrow right-arrow" id="right-arrow">
+                    ▶
+                </button>
+            </div>
+        </div>
         <div class="home-page-content">
             {%- for project in collections.event -%}
                 <div class="project-link-image">
@@ -54,6 +86,6 @@ layout: base.njk
                 </div>
             {%- endfor -%}
         </div>
-    </div>
+    </section>
 </main>
-</div>
+

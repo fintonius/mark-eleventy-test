@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>example</title>
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/home-page-style.css" />
-    <link rel="stylesheet" href="/project-style.css" />
+    
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
 <body>       
     <header><a href="/index.html">MARK DURKAN</a></header>
 
-    <div class="projectBody">
+    <div class="projectBody" id="projectBody">
       <nav>   
     <div id="overlay" ></div>
     <div id="pageLinks">
@@ -25,10 +24,22 @@
       </div>
     </div>
 </nav>
-          
-<main >
-    <div>
-        <h2> Participate </h2>
+      
+ <link rel="stylesheet" href="/home-page-style.css" />
+
+<main id="main">
+    <section class="category">
+        <div class="title">
+            <h2> Participate </h2>
+            <div class="nav-arrows">
+                <button class="nav-arrow left-arrow" id="left-arrow">
+                    ◀
+                </button>
+                <button class="nav-arrow right-arrow" id="right-arrow">
+                    ▶
+                </button>
+            </div>
+        </div>
         <div class="home-page-content"><div class="project-link-image">
                     <card>
                         <a href="/projects/confirming-typo-fix-worked/">
@@ -67,49 +78,69 @@
                     </div>
                 </div>
         </div>
-    </div>
-<div>
-    <h2> Practice </h2>
-    <div class="home-page-content"><div class="project-link-image">
-            <card>
-                <a href="/projects/event-3/">
-                    <img src="/assets/media/fine.png"/>
-                </a>
-            </card>
-            <div id="page-link-description">
-                Casual Cult Creation
+    </section>
+    <section class="category">
+        <div class="title">
+            <h2> Practice </h2>
+            <div class="nav-arrows">
+                <button class="nav-arrow left-arrow" id="left-arrow">
+                    ◀
+                </button>
+                <button class="nav-arrow right-arrow" id="right-arrow">
+                    ▶
+                </button>
             </div>
-        </div><div class="project-link-image">
-            <card>
-                <a href="/projects/event-4/">
-                    <img src="/assets/media/wall-collapsed-2.jpg"/>
-                </a>
-            </card>
-            <div id="page-link-description">
-                
+        </div>
+        <div class="home-page-content"><div class="project-link-image">
+                <card>
+                    <a href="/projects/event-3/">
+                        <img src="/assets/media/fine.png"/>
+                    </a>
+                </card>
+                <div id="page-link-description">
+                    Casual Cult Creation
+                </div>
+            </div><div class="project-link-image">
+                <card>
+                    <a href="/projects/event-4/">
+                        <img src="/assets/media/wall-collapsed-2.jpg"/>
+                    </a>
+                </card>
+                <div id="page-link-description">
+                    
+                </div>
+            </div><div class="project-link-image">
+                <card>
+                    <a href="/projects/testing-fix-to-images/">
+                        <img src="/assets/media/victoria-azgur.png"/>
+                    </a>
+                </card>
+                <div id="page-link-description">
+                    
+                </div>
+            </div><div class="project-link-image">
+                <card>
+                    <a href="/projects/testing-multiple-image-layout/">
+                        <img src="/assets/media/yanya1.jpg"/>
+                    </a>
+                </card>
+                <div id="page-link-description">
+                    
+                </div>
+            </div></div>
+    </section>
+    <section class="category">
+        <div class="title">
+            <h2> Projects </h2>
+            <div class="nav-arrows">
+                <button class="nav-arrow left-arrow" id="left-arrow">
+                    ◀
+                </button>
+                <button class="nav-arrow right-arrow" id="right-arrow">
+                    ▶
+                </button>
             </div>
-        </div><div class="project-link-image">
-            <card>
-                <a href="/projects/testing-fix-to-images/">
-                    <img src="/assets/media/victoria-azgur.png"/>
-                </a>
-            </card>
-            <div id="page-link-description">
-                
-            </div>
-        </div><div class="project-link-image">
-            <card>
-                <a href="/projects/testing-multiple-image-layout/">
-                    <img src="/assets/media/yanya1.jpg"/>
-                </a>
-            </card>
-            <div id="page-link-description">
-                
-            </div>
-        </div></div>
-</div>
-    <div>
-        <h2> Projects </h2>
+        </div>
         <div class="home-page-content"><div class="project-link-image">
                     <card>
                         <a href="/projects/daytime-dumper/">
@@ -147,9 +178,9 @@
                         
                     </div>
                 </div></div>
-    </div>
+    </section>
 </main>
-</div>
+
 
       <footer>Copyright Mark Durkan 2024</footer>
     </div>
