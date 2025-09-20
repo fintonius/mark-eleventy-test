@@ -4,22 +4,6 @@ const projectsClick = document.getElementById('projectsClick');
 const projectLinks = document.getElementById('projectLinks');
 const otherLinks = document.querySelectorAll('#pageLinks > .links:not(#projects)');
 
-// NAV-BAR ARROWS FOR HOME PAGE LINKS
-// - need to calculate x: current viewportWidth 
-// - need to calculate y: current total width of image links + sidebar
-// will just calculating width of <main> be enough?
-// need to remove resizing of images 
-// - need to calculate difference between x & y and when y > x
-
-// - use window.addEventListener('resize', function() {}) to determine the widths of x & y and then trigger functions depending on if x > y or not
-// window.addEventListener('resize', (e) => {
-//     let viewportWidth = document.documentElement.clientWidth;
-
-//     let projectBody = document.getElementById('projectBody').scrollWidth
-//     console.log('this is projectbody', projectBody)
-//     console.log('this is viewport,', viewportWidth)
-// })
-
 // HOME PAGE NAVIGATION ARROWS
 document.querySelectorAll('.category').forEach(row => {
 

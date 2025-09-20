@@ -26,7 +26,6 @@
   padding: 0;
 }
 body {
-    border: solid 3px green;
     padding-top: .5rem;
     font-family: 'BodyFont', sans-serif;
     font-size: clamp(1rem, 1.1vw, 1.25rem);
