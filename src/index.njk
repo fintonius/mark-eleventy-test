@@ -9,11 +9,11 @@ layout: base.njk
     <section class="category">
         <div class="title">
             <h2> Participate </h2>
-            <div class="nav-arrows">
-                <button class="nav-arrow left-arrow" id="left-arrow">
+            <div class="nav-arrow-container">
+                <button class="nav-arrow left-arrow">
                     ◀
                 </button>
-                <button class="nav-arrow right-arrow" id="right-arrow">
+                <button class="nav-arrow right-arrow">
                     ▶
                 </button>
             </div>
@@ -26,7 +26,7 @@ layout: base.njk
                             <img src="{{ project.data.image }}"/>
                         </a>
                     </card>
-                    <div id="page-link-description">
+                    <div class="page-link-description">
                         {{ project.data.context | safe }}
                     </div>
                 </div>
@@ -36,11 +36,11 @@ layout: base.njk
     <section class="category">
         <div class="title">
             <h2> Practice </h2>
-            <div class="nav-arrows">
-                <button class="nav-arrow left-arrow" id="left-arrow">
+            <div class="nav-arrow-container">
+                <button class="nav-arrow left-arrow">
                     ◀
                 </button>
-                <button class="nav-arrow right-arrow" id="right-arrow">
+                <button class="nav-arrow right-arrow">
                     ▶
                 </button>
             </div>
@@ -53,7 +53,7 @@ layout: base.njk
                         <img src="{{ project.data.image }}"/>
                     </a>
                 </card>
-                <div id="page-link-description">
+                <div class="page-link-description">
                     {{ project.data.context | safe }}
                 </div>
             </div>
@@ -63,11 +63,11 @@ layout: base.njk
     <section class="category">
         <div class="title">
             <h2> Projects </h2>
-            <div class="nav-arrows">
-                <button class="nav-arrow left-arrow" id="left-arrow">
+            <div class="nav-arrow-container">
+                <button class="nav-arrow left-arrow">
                     ◀
                 </button>
-                <button class="nav-arrow right-arrow" id="right-arrow">
+                <button class="nav-arrow right-arrow">
                     ▶
                 </button>
             </div>
@@ -80,7 +80,7 @@ layout: base.njk
                             <img src="{{ project.data.image }}"/>
                         </a>
                     </card>
-                    <div id="page-link-description">
+                    <div class="page-link-description">
                         {{ project.data.context | safe }}
                     </div>
                 </div>

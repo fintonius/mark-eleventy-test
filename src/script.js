@@ -4,54 +4,37 @@ const projectsClick = document.getElementById('projectsClick');
 const projectLinks = document.getElementById('projectLinks');
 const otherLinks = document.querySelectorAll('#pageLinks > .links:not(#projects)');
 
-// HOME PAGE NAVIGATION ARROWS
 document.querySelectorAll('.category').forEach(row => {
 
     const container = row.querySelector('.home-page-content');
     const leftArrow = row.querySelector('.left-arrow');
     const rightArrow = row.querySelector('.right-arrow');
+    const navArrows = row.querySelector('.nav-arrow-container')
 
     function isOverFlowing(element) {    
         return element.scrollWidth > element.clientWidth;
-    }
+    }    
 
     leftArrow.addEventListener('click', () => {
         container.scrollBy({ left: -400, behavior: "smooth" });
     })
+
     rightArrow.addEventListener('click', () => {
         container.scrollBy({ left: 400, behavior: "smooth" });
     })
 
-    window.addEventListener('resize', () => {
-        if (isOverFlowing(container)) {
-            leftArrow.style.display = 'inline';
-            rightArrow.style.display = 'inline';
-        } else {
-            leftArrow.style.display = 'none';
-            rightArrow.style.display = 'none';
-        }
+    window.addEventListener('load', () => {
+        isOverFlowing(container) ? 
+        navArrows.style.display = 'inline' :
+        navArrows.style.display = 'none'
+    })
 
+    window.addEventListener('resize', () => {
+        isOverFlowing(container) ? 
+        navArrows.style.display = 'inline' :
+        navArrows.style.display = 'none'
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // SIDEBAR DROP-DOWN MENU - probably defunct now
