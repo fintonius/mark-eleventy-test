@@ -108,9 +108,8 @@ button:hover {
 
   /* footer */
 footer {
-    padding: 3rem;
-    text-align: center;
-    font-size: clamp(.7rem, 1vw, 1rem);
+    padding: 1rem 0;
+    opacity: 50%;
 }
 
 /* MOBILE STYLE */

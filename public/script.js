@@ -36,6 +36,10 @@ document.querySelectorAll('.category').forEach(row => {
     })
 })
 
+// auto update year for footer
+const year = document.getElementById('year')
+const currentYear = new Date().getFullYear()
+year.innerText = `${currentYear}`
 
 // SIDEBAR DROP-DOWN MENU - probably defunct now
 // Configuring the links drop-down menu opening/closing animation

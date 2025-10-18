@@ -13,9 +13,9 @@
     {% include 'header.njk' %}
     <div class="projectBody" id="projectBody">
       {% include 'sidebar.njk' %}
-      {{ content | safe }}
-      {% include 'footer.njk' %}
+      {{ content | safe }}      
     </div>
+    {% include 'footer.njk' %}
     <script src="/script.js"></script>
     <script>
   if (window.netlifyIdentity) {
