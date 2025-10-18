@@ -1,3 +1,10 @@
+.projectBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 80%;
+    min-width: 570px;
+}
 /* The hero section */
 #hero {
     width: 100%;
@@ -5,17 +12,14 @@
 #heroContent {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .2rem;
+    grid-template-columns: auto auto;
     align-items: stretch;
 }
 #poster {
-    width: 100%;
-    /* max-width: 600px; */
-    /* min-width: 40%; */
-    /* height: 100%;
-  object-fit: cover;  */
-    /* min-height: 200px; */
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 .projectContext{
     display: grid;
@@ -29,7 +33,7 @@
 }
 .project-details-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 4fr;
     border-bottom: 1px solid white; 
 }
 .project-details {
@@ -124,6 +128,7 @@ img {
         padding-top: 0px;
         grid-template-columns: 1fr;
         gap: 3rem;
+        min-width: none;
     }
     
  

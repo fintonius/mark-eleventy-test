@@ -40,6 +40,11 @@ header {
     font-size: 1.5rem;
     padding-bottom: 6rem;
 }
+#mainContent {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 6rem;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'HeaderFont', sans-serif;
     font-weight: normal;
@@ -48,11 +53,7 @@ p {
     font-family: 'BodyFont', sans-serif;
     padding: .5rem;
 }
-.projectBody {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 2rem;
-}
+
 ul {
     list-style: none;
     font-family: 'HeaderFont', sans-serif;
