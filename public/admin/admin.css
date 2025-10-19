@@ -1,0 +1,16 @@
+/* admin/admin.css */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f6f7fb;
+}
+
+/* Example: Customize the sidebar */
+.nc-appHeader {
+  background-color: #2d3748 !important;
+}
+
+/* Example: Change button color */
+.nc-button {
+  background-color: #4fd1c5 !important;
+  color: white !important;
+}
