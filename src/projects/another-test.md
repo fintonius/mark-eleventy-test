@@ -7,6 +7,7 @@ category_content:
 title: Another Test
 tags:
   - project
+  - event
 image: /assets/media/volvo_a30d_dumper.jpg
 template: page
 ---
