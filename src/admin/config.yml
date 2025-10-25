@@ -17,20 +17,17 @@ collections:
     fields: 
       - label: "Category Content"
         name: "category_content"
-        widget: "list"
+        widget: "object"
         types:
-          - label: "Category Heading"
-            name: "category_heading"
-            widget: "object"
+          - label: "Category"
+            name: "category"
+            widget: "list"
             fields: 
               - { label: "Heading", name: "heading", widget: "string", 
                 required: false }
-          - label: "Category Text"
-            name: "category_text"
-            widget:  "object"
-            fields: 
-              - { label: "Heading", name: "heading", widget: "string", 
+              - { label: "Text", name: "text", widget: "string", 
                 required: false }
+
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Tags", name: "tags", widget: "list", default: ["project"], required: false }
       - { label: "Collaborator", name: "collaborator", widget: "string", required: false }

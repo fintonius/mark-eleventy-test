@@ -16,16 +16,20 @@ layout: base.njk
                 <div class="projectContext"> 
                 {% for block in category_content %}
                     <card class="project-details-container">
-                        {% if block.type == "category_heading" %}
+                        
                             <div class="project-details project-details-title" >    
-                                {{ category_heading | safe }}
+                            
+                                {{ block.heading | safe }}
+                            
                             </div>
-                        {% elif block.type == "category_text" %}
+                        
                             <div class="project-details project-details-content"
                             >
-                                {{ category_text | safe }}
+                            
+                                {{ block.text | safe }}
+                            
                             </div>
-                        {% endif %}
+                        
                     </card>
                 {% endfor %}                               
                    
