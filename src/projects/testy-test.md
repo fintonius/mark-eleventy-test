@@ -7,6 +7,7 @@ category_content:
 title: Testy test
 tags:
   - project
+  - event
 image: /assets/media/img_5335.png
 imageAlt: Test image
 template: page
