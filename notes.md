@@ -15,3 +15,24 @@
   - main page
    - make it obvious there's more projects per section: use arrows?
    - have links to each sections to scroll page down to it
+
+ <card class="project-details-container">
+                        <div class="project-details project-details-title" >PROJECT</div>
+                        <div class="project-details project-details-content" >{{ title }}</div>
+                    </card>
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >DATES</div>
+                        <div class="project-details project-details-content" >{{ dates }}</div>
+                    </card>                               
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >COLLABORATOR</div>
+                        <div class="project-details project-details-content" >{{ collaborator }}</div>
+                    </card>                             
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >CONTEXT</div>
+                        <div class="project-details project-details-content" >{{ context }}</div>
+                    </card>                             
+                    <card class="project-details-container">
+                        <div class="project-details project-details-title" >FUNDERS</div>
+                        <div class="project-details project-details-content" > </div>
+                    </card>

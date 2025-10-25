@@ -82,18 +82,26 @@
     margin-bottom: 1rem;
 }
 .projectContentText {
-    width: 90%;
-    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-content-images{
+    display: grid;
+    align-items: start;
+    max-width: 60%;
     margin-bottom: .5rem;
 }
-.projectContentImages {
+.project-content-image-text {
+    font-size: small;
+    margin-top: .5rem;
+}
+.project-content-image-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    align-items: end;
-    max-width: 100%;
-    margin: 0 auto;
 }
+
 img {
     max-width: 100%;
     height: auto;

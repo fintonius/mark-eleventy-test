@@ -15,6 +15,18 @@ collections:
     create: true
     slug: "{{slug}}"
     fields: 
+      - label: "Category Content"
+        name: "category_content"
+        widget: "list"
+        types:
+          - label: "Category Heading"
+            name: "category_heading"
+            widget: "string"
+            required: false
+          - label: "Category Text"
+            name: "category_text"
+            widget:  "string"
+            required: false
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Tags", name: "tags", widget: "list", default: ["project"], required: false }
       - { label: "Collaborator", name: "collaborator", widget: "string", required: false }

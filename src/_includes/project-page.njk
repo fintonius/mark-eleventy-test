@@ -9,28 +9,26 @@ layout: base.njk
     <section id="hero">
             <div id="heroContent">
                 <img id="poster" src="{{ image }}"
-                    alt="{{ imageAlt }}" />
-                <div class="projectContext">                                
+                    alt="{{ imageAlt }}" 
+                />
+                
+
+                <div class="projectContext"> 
+                {% for block in category_content %}
                     <card class="project-details-container">
-                        <div class="project-details project-details-title" >PROJECT</div>
-                        <div class="project-details project-details-content" >{{ title }}</div>
+                        {% if block.type == "category_heading" %}
+                            <div class="project-details project-details-title" >    
+                                {{ category_heading | safe }}
+                            </div>
+                        {% elif block.type == "category_text" %}
+                            <div class="project-details project-details-content"
+                            >
+                                {{ category_text | safe }}
+                            </div>
+                        {% endif %}
                     </card>
-                    <card class="project-details-container">
-                        <div class="project-details project-details-title" >DATES</div>
-                        <div class="project-details project-details-content" >{{ dates }}</div>
-                    </card>                               
-                    <card class="project-details-container">
-                        <div class="project-details project-details-title" >COLLABORATOR</div>
-                        <div class="project-details project-details-content" >{{ collaborator }}</div>
-                    </card>                             
-                    <card class="project-details-container">
-                        <div class="project-details project-details-title" >CONTEXT</div>
-                        <div class="project-details project-details-content" >{{ context }}</div>
-                    </card>                             
-                    <card class="project-details-container">
-                        <div class="project-details project-details-title" >FUNDERS</div>
-                        <div class="project-details project-details-content" > </div>
-                    </card>
+                {% endfor %}                               
+                   
                 </div>
             </div>
     </section>
@@ -45,9 +43,9 @@ layout: base.njk
                     {{ block.text | markdown | safe }}
                 </div>
             {% elif block.type == "image_block" %}
-                <div class="projectContentImages">
+                <div class="project-content-images">
                     <img src="{{ block.image }}" />
-                    <p class="image-title" alt="{{ block.alt}}"> 
+                    <p class="project-content-image-text" alt="{{ block.alt}}"> 
                         {{ block.caption | safe}}
                     </p>
                 </div> 
@@ -57,11 +55,19 @@ layout: base.njk
                   {{ block.title | safe }}
                 </a>
             {% elif block.type == "gallery_block" %}
-                <div class="projectContentImages">
+                <div class="project-content-image-gallery">
                     {% for image in block.gallery_image %}
-                        <img src="{{ image.image }}" />                        
+                        <div class="gallery-image">
+                            <img src="{{ image.image }}" />
+                            <p 
+                                class="project-content-image-text" 
+                                alt="{{ block.alt}}"
+                            > 
+                                {{ block.caption | safe}}
+                            </p>
+                        </div>
                     {% endfor %}
-                </div>     
+                </div>
             {% endif %}
         {% endfor %}
     </main>
