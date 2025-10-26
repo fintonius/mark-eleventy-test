@@ -6,7 +6,7 @@ category_content:
 title: Final Test?
 tags:
   - project
-  - practice
+  - event
 image: /assets/media/un1.0.jpg_eilismcdonald4union_2019_courtesyoftheartist-enlarged-.jpg
 template: page
 ---
