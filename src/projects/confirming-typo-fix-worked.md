@@ -1,8 +1,14 @@
 ---
-title: Architype
+category_content:
+  category:
+    - heading: title
+      text: Archiype
+    - heading: collaborator
+      text: Fintan
 collaborator: Fintan
 dates: ""
 layout: project-page.njk
+title: Architype
 tags:
   - project
   - participate
