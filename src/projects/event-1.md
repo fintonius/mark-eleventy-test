@@ -1,4 +1,12 @@
 ---
+category_content:
+  category:
+    - heading: title
+      text: CRV
+    - heading: collaborator
+      text: Fintan
+    - heading: Dates
+      text: August 2025
 title: CRV
 tags:
   - project
