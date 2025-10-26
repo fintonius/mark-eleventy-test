@@ -1,4 +1,8 @@
 ---
+category_content:
+  category:
+    - heading: title
+      text: I'm astonished wall that you haven't collapsed into ruins
 title: I'm astonished wall that you haven't collapsed into ruins
 tags:
   - project
