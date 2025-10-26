@@ -1,4 +1,8 @@
 ---
+category_content:
+  category:
+    - heading: title
+      text: Union Group
 title: Union Group
 tags:
   - project
