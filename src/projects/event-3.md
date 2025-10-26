@@ -1,4 +1,8 @@
 ---
+category_content:
+  category:
+    - heading: name
+      text: Casual Cult Creation
 title: Casual Cult Creation
 tags:
   - project
