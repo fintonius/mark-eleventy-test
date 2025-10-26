@@ -1,4 +1,8 @@
 ---
+category_content:
+  category:
+    - heading: project title
+      text: One Union
 title: One Union
 tags:
   - project
