@@ -1,4 +1,10 @@
 ---
+category_content:
+  category:
+    - heading: Title
+      text: ALIBI
+    - heading: date
+      text: 26/10/2025
 title: ALIBI
 tags:
   - project
