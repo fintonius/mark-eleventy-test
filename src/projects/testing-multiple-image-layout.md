@@ -6,11 +6,20 @@ gallery_block:
   - type: gallery_image
     image: /assets/media/2.jpg
     caption: test2
+category_content:
+  category:
+    - heading: Title
+      text: My Private Apocalypse
 title: My Private Apocalypse
+tags:
+  - project
+  - practice
 collaborator: ""
 dates: ""
 context: ""
+image: /assets/media/yanya1.jpg
 imageAlt: Yanya
+template: page
 content_blocks:
   - type: section_heading
     heading: Some Images
@@ -54,9 +63,4 @@ images:
     caption: Test 1
   - image: /assets/media/6.jpg
     caption: Test 2
-tags:
-  - project
-  - practice
-image: /assets/media/yanya1.jpg
-template: page
 ---
