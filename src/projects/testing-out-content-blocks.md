@@ -1,4 +1,8 @@
 ---
+category_content:
+  category:
+    - heading: project
+      text: Parking Meter Arts
 title: Parking Meter Arts
 tags:
   - project
