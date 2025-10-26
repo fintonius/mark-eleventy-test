@@ -1,4 +1,12 @@
 ---
+category_content:
+  category:
+    - heading: Project
+      text: Woodstock Castle Press
+    - heading: Dates
+      text: Ongoing
+    - heading: partner
+      text: Mary-Jo Gilligan
 title: Woodstock Castle Press
 tags:
   - project
