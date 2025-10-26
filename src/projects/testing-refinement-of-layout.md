@@ -1,4 +1,8 @@
 ---
+category_content:
+  category:
+    - heading: event
+      text: Standard Features
 title: Standard Features
 tags:
   - project
