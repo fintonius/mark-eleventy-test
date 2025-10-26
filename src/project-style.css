@@ -52,7 +52,7 @@
     padding-right: .5rem;
 }
 .projectContext :last-child {
-    border-bottom: none ;
+    /* border-bottom: none ; */
 }
 .projectContextInfo {
     display: flex;
@@ -85,7 +85,6 @@
     padding: 0;
     margin-bottom: 1.5rem;
 }
-
 .project-content-images{
     display: grid;
     align-items: start;

@@ -11,29 +11,20 @@ layout: base.njk
                 <img id="poster" src="{{ image }}"
                     alt="{{ imageAlt }}" 
                 />
-                
-
                 <div class="projectContext"> 
-                {% if block.type == "category_content" %}
-                {% for category in block.category %}
-                    <card class="project-details-container">
-                        
-                            <div class="project-details project-details-title" >    
-                            
-                                {{ block.heading | safe }}
-                            
-                            </div>
-                        
-                            <div class="project-details project-details-content"
-                            >
-                            
-                                {{ block.text | safe }}
-                            
-                            </div>
-                        
-                    </card>
-                {% endfor %}                               
-                   {% endif %}
+                    {% if category_content and category_content.category %}
+                    {% for category in category_content.category %}
+                        <card class="project-details-container">
+                                <div class="project-details                 project-details-title" >    
+                                    {{ category.heading | upper | safe }}
+                                </div>
+                                <div class="project-details project-details-content"
+                                >                                
+                                    {{ category.text | safe }}
+                                </div>                            
+                        </card>
+                    {% endfor %}                               
+                    {% endif %}
                 </div>
             </div>
     </section>
