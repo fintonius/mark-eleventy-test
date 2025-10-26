@@ -1,4 +1,8 @@
 ---
+category_content:
+  category:
+    - heading: Title
+      text: Untitled (Azgur)
 title: Untitled (Azgur)
 tags:
   - project
