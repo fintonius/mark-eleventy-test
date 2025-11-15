@@ -1,19 +1,16 @@
-.projectBody {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 80%;
-    min-width: 570px;
+.project-body {
+    /* width: 80%;
+    min-width: 570px; */
+    width: clamp(570px, 90%, 1400px);
 }
 /* The hero section */
 #hero {
     width: 100%;
+    margin-bottom: 2rem;
 }
-#heroContent {
-    width: 100%;
-    /* height: 80vh; */
+#hero-content {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     align-items: stretch;
 }
 #poster {
@@ -22,24 +19,25 @@
     height: auto;
     object-fit: contain;
 }
-.projectContext{
+.project-context{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: auto auto auto auto 1fr;
-    border-top: 1px solid white; /* Top border for the whole grid */
-    border-bottom: 1px solid white; /* Bottom border for the whole grid */
+    grid-auto-rows: auto;
+    align-content: start;
+    border-top: 1px solid white; 
     border-right: 1px solid white;
-    margin-top: 0px; /*This is to align the white outline with Poster image*/
-    margin-bottom: 0px; /*This is to align the white outline with Poster image*/
+    border-bottom: 1px solid white;;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
 }
 .project-details-container{
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: minmax(150px, 20%) 4fr;
     border-bottom: 1px solid white; 
 }
 .project-details {
     display: flex;
-    align-items: top;
+    align-items: flex-start;
     padding: 0.5rem 0.5rem 0.8rem 0.5rem;
 }
 .project-details-title {
@@ -51,37 +49,13 @@
     font-size: clamp(1rem, 1.1vw, 1.25rem);
     padding-right: .5rem;
 }
-.projectContext :last-child {
-    /* border-bottom: none ; */
-}
-.projectContextInfo {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-.projectContextInfo p:first-child {
-    margin-bottom: 5px;
-}
-#projectTitle {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-family: 'HeaderFont', sans-serif;
-}
 
 /* THE MAIN CONTENT OF THE PROJECT PAGE */
-.projectContent {
-    max-width: 900px;
-    padding-left: 5rem;
-}
-.projectContentSection{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-}
-.projectContentHeading {
+.project-content-heading {
     text-align: center;
     margin-bottom: 1rem;
 }
-.projectContentText {
+.project-content-text {
     padding: 0;
     margin-bottom: 1.5rem;
 }
@@ -100,13 +74,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-
 img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
-
 .document-icon {
     background-color: white;
     width: 50px;
@@ -116,66 +88,46 @@ img {
 }
 /* Mobile styles */
 
-@media (max-width: 780px) {
-    /* body{
-        padding-left: 1rem;
-        padding-right: 3rem;
-    } */
-    /* Header section */
-    header {
-        padding: 0px;
-        padding-top: 1rem;
-        display: inline-block;
-    }
+@media (max-width: 750px) {
+
     header > a {
         line-height: .5;
         padding: 0px;
         display: inline-block;        
-    }
-    .projectBody {
-        padding-top: 0px;
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        min-width: none;
-    }
+    }    
     
- 
+
     /* Hero section */
     #hero {
         max-width: 100%;
     }
-    #poster {
-        width: 100%;
-        max-width: 100%;
-    }
-    #heroContent {
-        width: 100%;
+    #hero-content {
+        max-width: 90%;
         display: grid;
         grid-template-columns: 1fr;
-        gap: .5rem;
     }
-
-    .projectContext{
-        grid-template-columns: auto auto auto auto 1fr;
-        grid-template-rows: 1fr;
+    #poster {
+        width: 100%;
+        max-height: 100%;
+    }
+    .project-context{
         border: solid 1px white;
-        border-top: none; /* Top border for the whole grid */
+        border-top: none;
     }
-    .projectContext :last-child{
-        border-right: none;
+    .project-context :last-child{
+        border-bottom: none;
     }
     .project-details-container{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        border-bottom: none;
-        border-right: 1px solid white; 
+        border-right: none; 
     }
     .project-details-title {
-        border-right: none; 
-        border-bottom: 1px solid white;
+        border-right: 1px solid white;
     }
     /* Project content */
+    .project-content-main {
+        width: 80%;
+    }
     .projectContentImages {
         grid-template-columns: 1fr;
     }

@@ -40,11 +40,6 @@ header {
     font-size: 1.5rem;
     padding-bottom: 6rem;
 }
-#mainContent {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 6rem;
-}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'HeaderFont', sans-serif;
     font-weight: normal;
@@ -57,34 +52,19 @@ ul {
     list-style: none;
     font-family: 'HeaderFont', sans-serif;
 }
-#pageLinks {
+#main-content{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 3rem;
+}
+#page-links {
     font-size: clamp(1.1rem, 1.1vw, 1.2rem);
     display: flex;
     flex-direction: column;
     gap: 5px;
     position: relative;
 }
-.links {
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-#projectLinks {    
-    font-size: clamp(1rem, 1vw, 1.1rem);
-    visibility: hidden;
-    list-style-type: none;
-    position: absolute;
-    top: 100%;
-    z-index: 2;
-    opacity: 0;
-    transform: translateX(0px);
-    transition: opacity .5s ease, transform .7s ease, visibility .4s ease;
-}
-.hoverable:hover #projectLinks {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(20px);
-}
+
 img {
     max-width: 100%;
     height: auto;
@@ -106,22 +86,59 @@ button:hover {
     cursor: pointer;
 }
 
-  /* footer */
+  /* FOOTER */
 footer {
     padding: 1rem 0;
     opacity: 50%;
 }
 
 /* MOBILE STYLE */
-@media (max-width: 780px) {
+@media (max-width: 750px) {
 body {
-    width: 90%;
-    max-width: 90%;
-    margin: 0 auto;
+    margin: 0 ;
     padding-left: 1rem;
     padding-right: 1rem; 
 }
-nav{
+header {
+    padding-bottom: 2rem;
+}
+#page-links {
+
+    display: flex; 
+    flex-direction: row;
+    gap: 1rem;
+}
+#main-content {
+    grid-template-columns:1fr;   
+    gap: 2rem;
+}
+}
+
+
+
+/* CODE FOR EXPANDING MENU */
+/* .links {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#projectLinks {    
+    font-size: clamp(1rem, 1vw, 1.1rem);
+    visibility: hidden;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    opacity: 0;
+    transform: translateX(0px);
+    transition: opacity .5s ease, transform .7s ease, visibility .4s ease;
+}
+.hoverable:hover #projectLinks {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(20px);
+} */
+/* nav{
     width: 100%;
 }
 #overlay {
@@ -139,8 +156,8 @@ nav{
 #overlay.active {
     opacity: 1;
     visibility: visible;
-}
-#pageLinks {
+} */
+/* #pageLinks {
     display: flex; 
     flex-direction: row; 
     justify-content: flex-start; 
@@ -169,12 +186,11 @@ nav{
     visibility: visible;
     transform: translateX(-250px);
     transition: opacity 2s ease, transform .6s ease;
-}
+} */
 
 /* Disable animations on other links */
-.info,
+/* .info,
 .contact {
     transform: none !important;
     transition: none !important; 
-}
-}
+} */

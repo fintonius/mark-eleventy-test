@@ -5,13 +5,13 @@ layout: base.njk
       <link rel="stylesheet" href="/project-style.css" />
 {% endblock %}
 
-<div class="projectBody" id="projectBody">
+<div class="project-body">
     <section id="hero">
-            <div id="heroContent">
+            <div id="hero-content">
                 <img id="poster" src="{{ image }}"
                     alt="{{ imageAlt }}" 
                 />
-                <div class="projectContext"> 
+                <div class="project-context"> 
                     {% if category_content and category_content.category %}
                     {% for category in category_content.category %}
                         <card class="project-details-container">
@@ -31,11 +31,11 @@ layout: base.njk
         <main class="project-content-main"> 
         {% for block in content_blocks %}
             {% if block.type == "section_heading" %}
-                <h2 class="projectContentHeading">
+                <h2 class="project-content-heading">
                     {{ block.heading | markdown | safe }}
                 </h2>
             {% elif block.type == "text_block" %}
-                <div class="projectContentText">
+                <div class="project-content-text">
                     {{ block.text | markdown | safe }}
                 </div>
             {% elif block.type == "image_block" %}

@@ -23,6 +23,11 @@ h2 {
 .home-page-content::-webkit-scrollbar {
   display: none; /* Chrome/Safari hide scrollbar */
 }
+
+/* CATEGORY SECTIONS */
+.category {
+    margin-bottom: 2rem;
+}
 .nav-arrow-container {
     display: none;
 }
@@ -53,10 +58,6 @@ h2 {
 }
 
 /* mobile style */
-@media (max-width: 780px) {
-    .home-page-content{
-        display: grid;
-        gap: 1.2rem;
-        grid-template-columns: 1fr 1fr;
-    }
+@media (max-width: 750px) {
+
 }
