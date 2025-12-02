@@ -96,13 +96,15 @@ img {
         display: inline-block;        
     }    
     
-
+    .project-body {
+        width: 90%
+    }
     /* Hero section */
     #hero {
-        max-width: 100%;
+        /* max-width: 80%; */
     }
     #hero-content {
-        max-width: 90%;
+        /* max-width: 90%; */
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -126,7 +128,7 @@ img {
     }
     /* Project content */
     .project-content-main {
-        width: 80%;
+        /* width: 80%; */
     }
     .projectContentImages {
         grid-template-columns: 1fr;
