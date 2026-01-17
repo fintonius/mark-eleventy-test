@@ -1,8 +1,6 @@
 ---
 category_content:
-  category:
-    - heading: This is category heading
-      text: This is category text
+  category: []
 title: This is the title
 tags:
   - project
