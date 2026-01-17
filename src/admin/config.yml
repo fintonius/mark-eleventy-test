@@ -26,11 +26,8 @@ collections:
               - { label: "Heading", name: "heading", widget: "string", 
                 required: false }
               - { label: "Text", name: "text", widget: "string", 
-                required: false }
-      - { label: "Title", name: "title", widget: "string", required: false }
+                required: false }      
       - { label: "Tags", name: "tags", widget: "list", default: ["project"], required: false }
-      - { label: "Collaborator", name: "collaborator", widget: "string", required: false }
-      - { label: "Dates", name: "dates", widget: "string", required: false }
       - { label: "Context", name: "context", widget: "string", required: false }
       - { label: "Poster Image", name: "image", widget: "image", required: false }
       - { label: "Image caption", name: "imageAlt", widget: "string", required: false }
