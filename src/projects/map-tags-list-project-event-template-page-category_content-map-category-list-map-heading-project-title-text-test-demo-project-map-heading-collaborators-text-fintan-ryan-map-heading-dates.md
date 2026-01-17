@@ -24,8 +24,11 @@ content_blocks:
         caption: Burnt out car
       - image: /assets/media/07-16-panke-gallery-clarken-web.jpg
         caption: Loadsa legs
+      - image: /assets/media/1.jpg
+        caption: A lovely mirror
   - type: image_block
     image: /assets/media/3.jpg
     caption: Some chairs
     alt: Some chairs
+  - type: image_block
 ---
