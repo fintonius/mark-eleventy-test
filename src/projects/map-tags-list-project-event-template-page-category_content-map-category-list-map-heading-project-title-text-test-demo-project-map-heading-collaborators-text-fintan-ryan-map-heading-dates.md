@@ -10,7 +10,7 @@ category_content:
 tags:
   - project
   - event
-context: This is the text that will appear beneath the project image on the home page
+context: This is the text that will appear beneath the project image on the home.  page
 image: /assets/media/8.jpg
 template: page
 content_blocks:
@@ -30,5 +30,4 @@ content_blocks:
     image: /assets/media/3.jpg
     caption: Some chairs
     alt: Some chairs
-  - type: image_block
 ---
