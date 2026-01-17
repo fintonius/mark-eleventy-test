@@ -10,6 +10,6 @@ tags:
 collaborator: this is collaborator
 dates: these are dates
 context: here is the context
-image: /assets/media/fine.png
+image: /assets/media/04-16-panke-gallery-clarken-web.jpg
 template: page
 ---
