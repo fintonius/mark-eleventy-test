@@ -6,6 +6,7 @@ category_content:
 title: This is the Title section
 tags:
   - project
+  - event
 context: This is the Context section
 template: page
 ---
