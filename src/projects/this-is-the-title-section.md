@@ -8,5 +8,11 @@ tags:
   - project
   - event
 context: This is the Context section
+image: /assets/media/fine.png
 template: page
+content_blocks:
+  - type: section_heading
+    heading: test content
+  - type: text_block
+    text: test content
 ---
