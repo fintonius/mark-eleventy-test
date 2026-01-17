@@ -7,6 +7,8 @@ title: This is the Title section
 tags:
   - project
   - event
+collaborator: This is the collaborator section
+dates: this is dates
 context: This is the Context section
 image: /assets/media/fine.png
 template: page
