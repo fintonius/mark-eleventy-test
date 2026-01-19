@@ -63,6 +63,7 @@ collections:
                 fields:
                   - { label: "Image", name: "image", widget: "image" }
                   - { label: "Image Caption", name: "caption", widget: "string" }
+                  - { label: "Image Alt Text", name: "alt", widget: "string" }
           - label: "Project PDF"
             name: "project_pdf"
             widget: "object"

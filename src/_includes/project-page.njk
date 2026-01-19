@@ -57,9 +57,9 @@ layout: base.njk
                             <img src="{{ image.image }}" />
                             <p 
                                 class="project-content-image-text" 
-                                alt="{{ block.alt}}"
+                                alt="{{ image.alt | safe }}"
                             > 
-                                {{ block.caption | safe}}
+                                {{ image.caption | safe }}
                             </p>
                         </div>
                     {% endfor %}
